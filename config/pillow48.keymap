@@ -23,7 +23,7 @@
             &kp N1      &kp N2  &kp N3  &kp N4  &kp N5                &kp N8   &kp N9   &kp N0   &kp MINUS     
 &kp TAB     &kp Q       &kp W   &kp E   &kp R   &kp T            &kp Y    &kp U    &kp I    &kp O    &kp P    
 &mo SYM1    &kp A       &kp S   &kp D   &kp F   &kp G            &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
-&kp LSHFT   &tog LEFT   &kp Z   &kp X   &kp C   &kp V            &kp B    &kp N    &kp M    &tog LEFT &kp RALT
+&kp LSHFT   &tog FLIP   &kp Z   &kp X   &kp C   &kp V            &kp B    &kp N    &kp M    &tog FLIP &kp RALT
                         &ht_num 8 8 &kp SPC &mo MODS             &mo NUM  &kp SPC  &mo FUNC    
             >;            
         };
@@ -32,10 +32,10 @@
             display-name = "Mods and Navigation";
             bindings = <
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
-&kp LA(TAB) &kt LCTRL   &kt LSHFT   &kt LALT    &kp T       &kp BSPC            &kp C_AC_BACK           &mkp MCLK   &kp UP      &kp mkp RCLK    &kp C_AC_FORWARD    
+&kp LA(TAB) &kt LCTRL   &kt LSHFT   &kt LALT    &kp T       &kp BSPC            &kp C_AC_BACK   &mkp MCLK   &kp UP      &kp mkp RCLK    &kp C_AC_FORWARD    
 &sl FUNC    &kp LC(A)   &kp LC(S)   &kt LGUI    &kp LC(F)   &kp ENTER           &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &kp CAPS    &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PD_UP)  &kp HOME    &kp END     &kp LC(PG_DN)   &kp DOT  
-                                    &trans      &kp LG(SPC) &trans            &mo NUM        &kp SPC     &mo  
+                                    &trans      &kp LG(SPC) &trans              &trans          &trans      &trans  
             >;  
         };
 //sl: sticky layer, same function with one shot layer
