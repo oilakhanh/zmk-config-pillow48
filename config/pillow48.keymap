@@ -33,7 +33,7 @@
             bindings = <
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
 &kp LA(TAB) &kt LCTRL   &kt LSHFT   &kt LALT    &kp T       &kp BSPC            &kp C_AC_BACK   &mkp MCLK   &kp UP      &mkp RCLK    &kp C_AC_FORWARD    
-&sl FUNC    &kp LC(A)   &kp LC(S)   &kt LGUI    &kp LC(F)   &kp ENTER           &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&sl 2    &kp LC(A)   &kp LC(S)   &kt LGUI    &kp LC(F)   &kp ENTER           &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &kp CAPS    &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PD_UP)  &kp HOME    &kp END     &kp LC(PG_DN)   &kp DOT  
                                     &trans      &kp LG(SPC) &trans              &trans          &trans      &trans  
             >;  
