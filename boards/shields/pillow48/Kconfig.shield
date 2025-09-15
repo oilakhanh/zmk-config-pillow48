@@ -1,0 +1,7 @@
+config SHIELD_PILLOW48_LEFT
+    def_bool $(shields_list_contains,pillow48_left)
+
+config SHIELD_PILLOW48_RIGHT
+    def_bool $(shields_list_contains,pillow48_right)
+
+    
