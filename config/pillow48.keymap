@@ -1,7 +1,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+
 
 #define BASE 0
 #define MODS 1
@@ -32,9 +34,9 @@
             display-name = "Mods and Navigation";
             bindings = <
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
-&kp LA(TAB) &kt LCTRL   &kt LSHFT   &kt LALT    &kp T       &kp BSPC            &kp C_AC_BACK   &mkp MCLK   &kp UP      &mkp RCLK    &kp C_AC_FORWARD    
-&sl 2    &kp LC(A)   &kp LC(S)   &kt LGUI    &kp LC(F)   &kp ENTER           &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
-&kp CAPS    &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PD_UP)  &kp HOME    &kp END     &kp LC(PG_DN)   &kp DOT  
+&kp LA(TAB) &sk LCTRL   &sk LSHFT   &sk LALT    &kp T       &kp BSPC            &kp C_AC_BACK   &mkp MCLK   &kp UP      &mkp RCLK    &kp C_AC_FORWARD    
+&sl 2    &kp LC(A)   &kp LC(S)   &sk LGUI    &kp LC(F)   &kp ENTER           &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&kt LSHFT    &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PD_UP)  &kp HOME    &kp END     &kp LC(PG_DN)   &kp DOT  
                                     &trans      &kp LG(SPC) &trans              &trans          &trans      &trans  
             >;  
         };
