@@ -101,16 +101,12 @@
             display-name = "Numpad";
             bindings = <
                 &kp KP_N1   &kp KP_N2       &kp KP_N3       &kp KP_N4       &trans                  &kp KP_N1   &kp KP_N2       &kp KP_N3           &kp KP_N4       
-&kp LC(PLUS)    &kp KP_N5   &kp KP_N6       &kp KP_N7       &kp KP_N8       &kp BKSPC               &kp KP_N5   &kp KP_N6       &kp KP_N7           &kp KP_N8       &kp BKSPC       
+&kp LC(PLUS)    &kp KP_N5   &kp KP_N6       &kp KP_N7       &kp KP_N8       &kp BSPC               &kp KP_N5   &kp KP_N6       &kp KP_N7           &kp KP_N8       &kp BSPC       
 &kp LC(MINUS)   &kp KP_N9   &kp KP_N0       &kp KP_COMMA    &kp KP_DOT      &kp ENTER               &kp KP_N9   &kp KP_N0       &kp KP_COMMA        &kp KP_DOT      &kp ENTER 
 &kp LSHFT       &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY &kp KP_DIVIDE   &kp KP_EQUAL            &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY     &kp KP_DIVIDE   &kp KP_EQUAL   
                                             &trans          &trans          &trans                  &trans      &trans          &trans
             >;
         };
-
-//from here, except for "MEDIA" layer, all of the layers below are made for "One Hand Mode"
-//firstly make only Left Hand version, and then flip to Right Hand
-//Right Hand and Left Hand can all access these layers, so there are 2 ways to enter "One Hand Mode".
 
         FLIP {
             display-name = "Left";
