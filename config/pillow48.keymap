@@ -59,7 +59,7 @@
         &trans  &trans    &trans   &trans   &trans                                              &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
 &kp LA(SPC) &mo 4        &mo 5      &trans          &kp T          &trans              &kp SEMICOLON   &kp SLASH   &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
 &trans      &trans          &trans          &trans          &kp G          &trans              &kp AMPS        &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
-&trans      &kp C_BRI_DN    &kp C_BRI_UP    &kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE          &kp TIDLE       &kp GRAVE   &trans          &trans              &trans
+&trans      &kp C_BRI_DN    &kp C_BRI_UP    &kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE          &kp TILDE       &kp GRAVE   &trans          &trans              &trans
                                             &trans          &trans          &trans              &trans          &trans      &trans    
             >;
         };
