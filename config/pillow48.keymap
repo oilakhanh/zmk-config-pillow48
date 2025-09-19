@@ -22,10 +22,10 @@
         BASE {
             display-name = "Base";
             bindings = <
-            &kp N1      &kp N2  &kp N3  &kp N4  &kp N5                &kp N8   &kp N9   &kp N0   &kp MINUS     
-&kp TAB     &kp Q       &kp W   &kp E   &kp R   &kp T            &kp Y    &kp U    &kp I    &kp O    &kp P    
-&mo 3    &kp A       &kp S   &kp D   &kp F   &kp G            &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
-&kp LSHFT   &tog 8   &kp Z   &kp X   &kp C   &kp V            &kp B    &kp N    &kp M    &tog 8      &kp RALT
+            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                &kp N8   &kp N9   &kp N0   &kp MINUS     
+&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T            &kp Y    &kp U    &kp I    &kp O    &kp P    
+&mo 3       &kp A   &kp S   &kp D   &kp F   &kp G            &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
+&kp LSHFT   &tog 8  &kp Z   &kp X   &kp C   &kp V            &kp B    &kp N    &kp M    &tog 8      &kp RALT
                         &ht_num 7 7 &kp SPC &mo 1             &mo 7  &kp SPC  &mo 2    
             >;            
         };
