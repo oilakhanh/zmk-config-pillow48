@@ -24,4 +24,5 @@ include:
     snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: pillow48_right
+    snippet: zmk-usb-logging
 
