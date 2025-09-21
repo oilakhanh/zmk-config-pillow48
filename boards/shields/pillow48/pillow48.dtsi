@@ -35,6 +35,8 @@
             label = "LEFT_KSCAN";
             diode-direction = "col2row";
             wakeup-source;
+            rows = <5>;
+            columns = <6>;
             
             // Will be overridden in pillow48_left.overlay
             row-gpios = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -56,6 +58,8 @@
             label = "RIGHT_KSCAN";
             diode-direction = "col2row";
             wakeup-source;
+            rows = <5>;
+            columns = <5>;
             
             // Will be overridden in pillow48_right.overlay
             row-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -72,17 +76,3 @@
         };
     };
 }; // ← Đây là dấu }; bị thiếu
-
-&kscan0 {
-    left {
-        kscan = <&left>;
-        row-offset = <0>;
-        col-offset = <0>;
-    };
-    
-    right {
-        kscan = <&right>;  
-        row-offset = <0>;
-        col-offset = <6>;
-    };
-};
