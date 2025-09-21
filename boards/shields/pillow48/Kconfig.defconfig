@@ -16,6 +16,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_PERIPHERAL
     default y
 
+config ZMK_USB
+    default n
+
 endif
 
 if SHIELD_PILLOW48_LEFT || SHIELD_PILLOW48_RIGHT
