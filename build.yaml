@@ -21,8 +21,7 @@
 include:
   - board: nice_nano_v2
     shield: pillow48_left
-    snippet: zmk-split-role-central
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: pillow48_right
-    snippet: zmk-usb-logging
 
