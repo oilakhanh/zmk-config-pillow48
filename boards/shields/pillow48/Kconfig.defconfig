@@ -8,18 +8,6 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_PILLOW48_RIGHT
-
-config ZMK_KEYBOARD_NAME
-    default "pillow48"
-
-config ZMK_SPLIT_ROLE_PERIPHERAL
-    default y
-
-config ZMK_USB
-    default n
-
-endif
 
 if SHIELD_PILLOW48_LEFT || SHIELD_PILLOW48_RIGHT
 
