@@ -1,6 +1,30 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "pillow48.dtsi"
 
+
+&right {
+    row-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
+                <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+
+    col-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>,
+                <&gpio1 15 GPIO_ACTIVE_HIGH>,
+                <&gpio1 13 GPIO_ACTIVE_HIGH>,
+                <&gpio1 11 GPIO_ACTIVE_HIGH>,
+                <&gpio0 10 GPIO_ACTIVE_HIGH>;
+};
+
+
+
+/*
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
+    };
+    
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
@@ -17,13 +41,6 @@
                     <&gpio1 11 GPIO_ACTIVE_HIGH>,
                     <&gpio0 10 GPIO_ACTIVE_HIGH>;
     };
-/*
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
-    };
-    
 
 
     default_transform: keymap_transform_0 {
