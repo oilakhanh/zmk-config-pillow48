@@ -1,6 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "pillow48.dtsi"
 
+&default_transform {
+    col-offset = <6>;  
+};
 
 &kscan0 {
     row-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
