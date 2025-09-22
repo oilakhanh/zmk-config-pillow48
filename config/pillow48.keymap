@@ -26,7 +26,7 @@
 &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T                           &kp Y    &kp U    &kp I    &kp O    &kp P    
 &mo 3       &kp A   &kp S   &kp D   &kp F   &kp G                           &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
 &kp LSHFT   &tog 8  &kp Z   &kp X   &kp C   &kp V                           &kp B    &kp N    &kp M    &tog 8   &kt LSHFT
-                        &ht_num 7 7 &ht_AltSpace LALT SPC &mo 1             &mo 7    &kp SPC  &mo 2      
+                        &ht_num LALT 7  &mo 1   &ht_AltSpace LALT SPC                &mo 7    &kp SPC  &mo 2      
             >;            
         };
 
@@ -145,7 +145,7 @@
             tapping-term-ms = <100>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&mo>, <&tog>;
+            bindings = <&kp>, <&tog>;
         };
 
         ht_AltSpace: hold_tap_AltSpace {
@@ -157,15 +157,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        
+
         sk: sticky_key {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <0>;     // Vẫn cần: không timeout
-            quick-release;              // Vẫn cần: release khi nhấn key target
-            lazy;                       // Activate trước khi key target pressed
+            release-after-ms = <5000>;   
+            quick-release;             
+            lazy;                      
         };
     };
 /*
@@ -207,10 +207,10 @@
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp RCTRL>;
-        };
+        }; 
         combo_RSHFT {
             timeout-ms = <50>;
-            key-positions = <28 29>;
+            key-positions = <16 17>;
             bindings = <&kp RSHFT>;
         };
         combo_RALT {
