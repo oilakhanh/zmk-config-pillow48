@@ -152,10 +152,20 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_AltSpace";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+        
+        sk: sticky_key {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <0>;     // Vẫn cần: không timeout
+            quick-release;              // Vẫn cần: release khi nhấn key target
+            lazy;                       // Activate trước khi key target pressed
         };
     };
 /*
@@ -193,6 +203,21 @@
             key-positions = <22 23>;
             bindings = <&kp LGUI>;
         };
+        combo_RCTRL {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp RCTRL>;
+        };
+        combo_RSHFT {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp RSHFT>;
+        };
+        combo_RALT {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp RALT>;
+        };           
         combo_reset_left {
             timeout-ms = <50>;
             key-positions = <2 3 4>;
