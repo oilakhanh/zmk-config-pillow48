@@ -22,11 +22,11 @@
         BASE {
             display-name = "Base";
             bindings = <
-            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp N8   &kp N9   &kp N0   &kp MINUS     
-&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T           &kp Y    &kp U    &kp I    &kp O    &kp P    
-&mo 3       &kp A   &kp S   &kp D   &kp F   &kp G           &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
-&kp LSHFT   &tog 8  &kp Z   &kp X   &kp C   &kp V           &kp B    &kp N    &kp M    &tog 8   &kt LSHFT
-                        &ht_num 7 7 &kp SPC &mo 1           &mo 7    &kp SPC  &mo 2      
+            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                          &kp N8   &kp N9   &kp N0   &kp MINUS     
+&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T                           &kp Y    &kp U    &kp I    &kp O    &kp P    
+&mo 3       &kp A   &kp S   &kp D   &kp F   &kp G                           &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
+&kp LSHFT   &tog 8  &kp Z   &kp X   &kp C   &kp V                           &kp B    &kp N    &kp M    &tog 8   &kt LSHFT
+                        &ht_num 7 7 &ht_AltSpace LALT SPC &mo 1             &mo 7    &kp SPC  &mo 2      
             >;            
         };
 
@@ -47,7 +47,7 @@
             bindings = <
     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_CLR      &bootloader            &bootloader      &trans      &trans      &trans                                  
 &kp F12     &kp F11     &kp F2      &kp F8      &kp F4      &kp F5              &kp SCROLLLOCK  &trans      &trans      &trans      &trans    
-&sl 9       &trans      &trans      &trans      &trans      &trans              &kp INS         &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK      
+&sl 9       &kt LCTRL   &kt LSHFT   &kt LGUI    &kt LALT    &trans              &kp INS         &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK      
 &kp F1      &kp F3      &kp F6      &kp F7      &kp F9      &kp F10             &trans          &trans      &trans      &trans      &trans
                                     &trans      &trans      &trans              &trans          &trans      &trans     
             >;
@@ -147,6 +147,15 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&tog>;
         };
+        ht_AltSpace: hold_tap_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_AltSpace";
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 /*
 0 1 2 3 4               5 6 7 8
@@ -185,12 +194,12 @@
         };
         combo_reset_left {
             timeout-ms = <50>;
-            key-positions = <3 4>;
+            key-positions = <2 3 4>;
             bindings = <&bootloader>;
         };               
         combo_reset_right {
             timeout-ms = <50>;
-            key-positions = <5 6>;
+            key-positions = <5 6 7>;
             bindings = <&bootloader>;
         };
         combo_to_BASE {
