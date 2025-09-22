@@ -26,7 +26,7 @@
 &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T                           &kp Y    &kp U    &kp I    &kp O    &kp P    
 &mo 3       &kp A   &kp S   &kp D   &kp F   &kp G                           &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
 &kp LSHFT   &tog 8  &kp Z   &kp X   &kp C   &kp V                           &kp B    &kp N    &kp M    &tog 8   &kt LSHFT
-                        &ht_num LALT 7  &mo 1   &ht_AltSpace LALT SPC                &mo 7    &kp SPC  &mo 2      
+                        &tog 7  &ht_AltSpace LALT SPC   &mo 1            &mo 7    &kp SPC  &mo 2      
             >;            
         };
 
@@ -138,16 +138,6 @@
     }; 
 
     behaviors {
-        ht_num: hold_tap_num {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_NUM";
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&tog>;
-        };
-
         ht_AltSpace: hold_tap_AltSpace {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_AltSpace";
@@ -165,7 +155,6 @@
             bindings = <&kp>;
             release-after-ms = <5000>;   
             quick-release;             
-            lazy;                      
         };
     };
 /*
