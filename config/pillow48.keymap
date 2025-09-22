@@ -147,7 +147,8 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&tog>;
         };
-        ht_AltSpace: hold_tap_num {
+
+        ht_AltSpace: hold_tap_AltSpace {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_AltSpace";
             #binding-cells = <2>;
