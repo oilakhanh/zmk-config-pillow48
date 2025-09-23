@@ -70,7 +70,7 @@
         &trans  &trans  &trans  &trans  &trans              &kp BACKSLASH   &kp DLLR        &kp EQUAL           &kp PLUS     
 &trans  &trans  &trans  &trans  &trans  &trans              &kp PIPE    &kp AT          &kp HASH            &kp LEFT_BRACE  &kp RIGHT_BRACE   
 &trans  &trans  &trans  &trans  &trans  &trans              &kp EXCL    &kp LESS_THAN   &kp GREATER_THAN    &kp PRCNT       &kp CARET
-&trans  &trans  &trans  &trans  &trans  &trans              &out OUT_USB    &out OUT_BLE      &out OUT_TOG  &trans          &trans  
+&trans  &trans  &trans  &trans  &trans  &trans              &trans      &trans          &trans              &trans          &trans  
                         &trans  &trans  &trans              &sk RALT    &sk RSHFT       &sk RCTRL    
             >;
         };
