@@ -104,7 +104,7 @@
                 &kp N1  &kp N2      &kp N3      &kp N4      &trans                  &kp N1      &kp N2      &kp N3          &kp N4       
 &kp LC(PLUS)    &kp N5  &kp N6      &kp N7      &kp N8      &kp BSPC                &kp N5      &kp N6      &kp N7          &kp N8      &kp BSPC       
 &kp LC(MINUS)   &kp N9  &kp N0      &kp COMMA   &kp DOT     &kp ENTER               &kp N9      &kp N0      &kp COMMA       &kp DOT     &kp ENTER 
-&trans          &trans  &kp MINUS   &kp SLASH   &kp EQUAL   &tog 8                  &kp PLUS    &kp MINUS   &kp MULTIPLY    &kp DIVIDE  &kp EQUAL   
+&trans          &trans  &kp MINUS   &kp SLASH   &kp EQUAL   &tog 8                  &trans      &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
                                     &trans      &trans      &trans                  &trans      &trans      &trans
             >;
         };
