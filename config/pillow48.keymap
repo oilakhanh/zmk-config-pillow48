@@ -35,9 +35,9 @@
             display-name = "Mods and Navigation";
             bindings = <
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
-&sl 2   &sk LCTRL   &sk LSHFT   &sk LALT    &kp T       &kp BSPC            &kp LA(LEFT)   &mkp MCLK   &kp UP      &mkp RCLK    &kp LA(RIGHT)    
+&trans   &sk LCTRL   &sk LSHFT   &sk LALT    &kp T       &kp BSPC            &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
 &trans  &kp LC(A)   &kp LC(S)   &sk LGUI    &kp LC(F)   &kp ENTER           &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
-&tog 10 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PG_UP)  &kp HOME    &kp END     &kp LC(PG_DN)   &trans  
+&tog 10 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PG_UP)   &kp HOME    &kp END     &kp LC(PG_DN)   &trans  
                                     &trans      &trans      &trans              &trans          &trans      &trans  
             >;  
         };
@@ -57,11 +57,11 @@
         SYM1 {
             display-name = "Frequent Symbols";
             bindings = <
-        &trans  &trans    &trans   &trans   &trans              &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&kp LA(SPC) &mo 4   &mo 5   &trans  &kp T   &trans              &kp SEMICOLON   &kp SLASH   &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&trans      &trans  &trans  &trans  &kp G   &trans              &kp AMPS        &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
-&trans      &trans  &trans  &trans  &trans  &trans              &kp LC(LS(TAB)) &kp TILDE       &kp GRAVE   &kp LC(TAB)         &trans
-                            &trans  &trans  &trans              &trans          &trans      &trans    
+            &kp F13 &kp F14 &kp F15 &kp F16 &kp F17                  &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
+&kp LA(SPC) &mo 4   &mo 5   &trans  &trans  &kp F18                 &kp SEMICOLON   &kp SLASH   &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&trans      &kp F19 &kp F20 &trans  &trans  &kp F21                 &kp AMPS        &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
+&trans      &trans  &trans  &kp F22 &kp F23 &kp F24                 &kp LC(LS(TAB)) &kp TILDE   &kp GRAVE       &kp LC(TAB)         &trans
+                            &trans  &trans  &trans                  &trans          &trans      &trans    
             >;
         };
 
@@ -101,10 +101,10 @@
         NUM1 {
             display-name = "Base numbers";
             bindings = <
-                &kp N1  &kp N2      &kp N3      &kp N4      &trans                  &kp N1      &kp N2      &kp N3          &kp N4       
+                &kp N1  &kp N2      &kp N3      &kp N4      &tog 8                   &kp N1      &kp N2      &kp N3          &kp N4       
 &kp LC(PLUS)    &kp N5  &kp N6      &kp N7      &kp N8      &kp BSPC                &kp N5      &kp N6      &kp N7          &kp N8      &kp BSPC       
 &kp LC(MINUS)   &kp N9  &kp N0      &kp COMMA   &kp DOT     &kp ENTER               &kp N9      &kp N0      &kp COMMA       &kp DOT     &kp ENTER 
-&trans          &trans  &kp MINUS   &kp SLASH   &kp EQUAL   &tog 8                  &trans      &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
+&trans          &trans  &kp MINUS   &kp SLASH   &kp EQUAL   &trans                 &trans      &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
                                     &trans      &trans      &trans                  &trans      &trans      &trans
             >;
         };
@@ -131,19 +131,13 @@
             >;
         };
  
-        MEDIA {
-            display-name = "Media and unsual symbols";
-// 
-// |       |  !  |  @  |  #   |  $   |  %   |                         |  x  |  x   |  x   |  x  | 
-// |   `   |  ^  |  &  |  (   |  )   |  _   |                   |  x   |  x    |  x    |  x   |   x   |
-// | CAPS  |  ;  |  :  |  "   |  [   |  ]   |                   |  x   |  x    |  x    |  x   |   x   | 
-// | SHFT  |  {  |  }  |  <   |  >   |  \   |        |  |       |  x   |  x    |  x    |  x   |   x   |
-
+        PUNC {
+            display-name = "Punctuation";
             bindings = <
-        &kp F13 &kp F14 &kp F15 &kp F16     &trans                              &trans  &trans  &trans  &trans      
-&trans  &kp F17 &kp F18 &kp F19 &kp F20     &kp BACKSLASH       &trans          &trans  &trans  &trans  &trans  &trans       
-&trans  &kp F21 &kp F22 &kp F23 &kp F24     &kp SEMICOLON       &trans          &trans  &trans  &trans  &trans            
-&trans  &trans  &trans  &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &kp GRAVE       &trans  &trans  &trans  &trans  &trans       
+        &kp EXCL &kp AT &kp HASH &kp DLLR      &kp GRAVE                               &trans  &trans  &trans  &trans      
+&trans  &kp PRCNT &kp CARET &kp AMPS  &kp STAR      &kp SLASH       &trans          &trans  &trans  &trans  &trans  &trans       
+&trans  &kp LPAR  &kp RPAR  &kp LESS_THAN  &kp GREATER_THAN      &kp SEMICOLON       &trans          &trans  &trans  &trans  &trans            
+&trans  &trans  &kp BACKSLASH  &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &       &trans  &trans  &trans  &trans  &trans       
                         &trans              &trans              &trans          &trans  &trans  &trans
             >;
         };
@@ -239,15 +233,25 @@
             key-positions = <42 43 44>;
             bindings = <&to 0>;
         };
-        combo_MEDIA_1 {
+        combo_FUNC_z {
             timeout-ms = <50>;
-            key-positions = <0 1 2>;
-            bindings = <&tog 10>;
+            key-positions = <31 32 33>;
+            bindings = <&tog 2>;
         };
-        combo_MEDIA_Q {
+        combo_FUNC_q {
             timeout-ms = <50>;
             key-positions = <9 10 11>;
+            bindings = <&sl 2>;
+        };
+        combo_PUNC_tog {
+            timeout-ms = <50>;
+            key-positions = <23 24 25>;
             bindings = <&tog 10>;
+        };
+        combo_PUNC_sl {
+            timeout-ms = <50>;
+            key-positions = <34 35 36>;
+            bindings = <&sl 10>;
         };
     };
 };
