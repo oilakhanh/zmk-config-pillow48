@@ -137,7 +137,7 @@
         &kp EXCL &kp AT &kp HASH &kp DLLR      &kp GRAVE                               &trans  &trans  &trans  &trans      
 &trans  &kp PRCNT &kp CARET &kp AMPS  &kp STAR      &kp SLASH       &trans          &trans  &trans  &trans  &trans  &trans       
 &trans  &kp LPAR  &kp RPAR  &kp LESS_THAN  &kp GREATER_THAN      &kp SEMICOLON       &trans          &trans  &trans  &trans  &trans            
-&trans  &trans  &kp BACKSLASH  &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &       &trans  &trans  &trans  &trans  &trans       
+&trans  &trans  &kp BACKSLASH  &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &trans       &trans  &trans  &trans  &trans  &trans       
                         &trans              &trans              &trans          &trans  &trans  &trans
             >;
         };
@@ -245,12 +245,12 @@
         };
         combo_PUNC_tog {
             timeout-ms = <50>;
-            key-positions = <23 24 25>;
+            key-positions = <34 35 36>;
             bindings = <&tog 10>;
         };
         combo_PUNC_sl {
             timeout-ms = <50>;
-            key-positions = <34 35 36>;
+            key-positions = <23 24 25>;
             bindings = <&sl 10>;
         };
     };
