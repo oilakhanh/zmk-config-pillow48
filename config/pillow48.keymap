@@ -173,6 +173,16 @@
 
     combos {
         compatible = "zmk,combos";
+        combo_N6 {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_N7 {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp LCTRL>;
+        };
         combo_AppSwitch {
             timeout-ms = <50>;
             key-positions = <9 10>;
