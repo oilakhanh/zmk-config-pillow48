@@ -24,10 +24,10 @@
             display-name = "Base";
             bindings = <
             &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N8   &kp N9   &kp N0   &kp MINUS     
-&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T                    &kp Y    &kp U    &kp I    &kp O    &kp P    
-&mo 3       &kp A   &kp S   &kp D   &kp F   &kp G                    &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
-&kp LSHFT   &tog 9  &kp Z   &kp X   &kp C   &kp V                    &kp B    &kp N    &kp M    &tog 9   &kt LSHFT
-                    &tog 7  &mo 1   &ht_AltSpace LALT SPC            &mo 7    &kp SPC  &mo 2      
+&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y    &kp U    &kp I    &kp O    &kp P    
+&mo 3       &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H    &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
+&kp LSHFT   &tog 9  &kp X   &kp C   &kp V   &kp Z                   &kp B    &kp N    &kp M    &tog 9   &kt LSHFT
+                    &tog 7  &mo 1   &ht_AltSpace LALT SPC           &mo 7    &kp SPC  &mo 2      
             >;            
         };
 
@@ -37,7 +37,7 @@
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
 &trans   &sk LCTRL   &sk LSHFT   &sk LALT    &kp T       &kp BSPC            &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
 &trans  &kp LC(A)   &kp LC(S)   &sk LGUI    &kp LC(F)   &kp ENTER           &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
-&tog 10 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PG_UP)   &kp HOME    &kp END     &kp LC(PG_DN)   &trans  
+&tog 10 &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(Y)        &kp LC(PG_UP)   &kp HOME    &kp END     &kp LC(PG_DN)   &trans  
                                     &trans      &trans      &trans              &trans          &trans      &trans  
             >;  
         };
@@ -57,10 +57,10 @@
         SYM1 {
             display-name = "Frequent Symbols";
             bindings = <
-            &kp F13 &kp F14 &kp F15 &kp F16 &kp F17                  &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&kp LA(SPC) &mo 4   &mo 5   &trans  &trans  &kp F18                 &kp SEMICOLON   &kp SLASH   &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&trans      &kp F19 &kp F20 &trans  &trans  &kp F21                 &kp AMPS        &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
-&trans      &trans  &trans  &kp F22 &kp F23 &kp F24                 &kp LC(LS(TAB)) &kp TILDE   &kp GRAVE       &kp LC(TAB)         &trans
+            &kp F13 &kp F14 &kp F15 &kp F16 &trans                   &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
+&kp LA(SPC) &mo 4   &mo 5   &kp F17 &kp F18 &trans                  &kp SEMICOLON   &kp SLASH   &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&trans      &kp F19 &kp F20 &kp F21 &kp F22 &trans                  &kp AMPS        &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
+&trans      &trans  &trans  &kp F23 &kp F24 &trans                &kp LC(LS(TAB)) &kp TILDE   &kp GRAVE       &kp LC(TAB)         &trans
                             &trans  &trans  &trans                  &trans          &trans      &trans    
             >;
         };
