@@ -24,8 +24,8 @@
             display-name = "Base";
             bindings = <
             &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N8   &kp N9   &kp N0   &kp MINUS     
-&kp TAB     &kp T   &kp W   &kp E   &kp R   &kp Q                   &kp Y   &kp U    &kp I    &kp O    &kp P    
-&mo 3       &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
+&kp TAB     &kp T   &kp W   &kp E   &kp R   &kp Q                   &kp G   &kp U    &kp I    &kp O    &kp P    
+&mo 3       &kp A   &kp S   &kp D   &kp F   &kp Y                   &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
 &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &tog 9                  &kp B   &kp N    &kp M    &tog 9   &kp RSHFT
                     &tog 7  &mo 1   &ht_AltSpace LALT SPC           &mo 2   &kp SPC  &mo 7      
             >;            
@@ -48,7 +48,7 @@
             bindings = <
     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_CLR      &bootloader                 &kp SCROLLLOCK  &trans      &trans      &trans                                      
 &kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &kp F12                 &sl RALT    &sl LGUI    &sl RSHFT   &sl RCTRL   &trans   
-&sl 10      &kt LCTRL   &kt LSHFT   &kt LGUI    &kt LALT    &trans                  &kp RALT    &trans      &trans      &trans      &trans      
+&sl 10      &kt LCTRL   &kt LSHFT   &kt LGUI    &kt LALT    &trans                  &kp RALT    &kp LGUI    &kp RSHFT   &kp RCTRL      &trans      
 &kp F1      &kp F3      &kp F6      &kp F7      &kp F9      &kp F10                 &kp INS     &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
                                     &mo 2       &trans      &trans                  &mo 2   &kp SPC  &mo 7     
             >;
@@ -215,18 +215,13 @@
         }; 
         combo_RSHFT {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <16 17>;
             bindings = <&kp RSHFT>;
         };
         combo_RALT {
             timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp RALT>;
-        }; 
-        combo_RGUI {
-            timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&kp LGUI>;
+            bindings = <&kp RALT>;
         }; 
         combo_reset_left {
             timeout-ms = <50>;
