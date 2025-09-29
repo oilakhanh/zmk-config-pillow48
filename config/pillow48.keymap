@@ -25,7 +25,7 @@
             bindings = <
             &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N8   &kp N9   &kp N0   &kp MINUS     
 &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp Y                   &kp T   &kp U    &kp I    &kp O    &kp P    
-&mo 3       &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
+&mo 3       &kp A   &kp S   &kp D   &kp F   &kp H                   &kp G   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
 &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &tog 9                  &kp B   &kp N    &kp M    &tog 9   &kp RSHFT
                     &tog 7  &mo 1   &ht_AltSpace LALT SPC           &mo 2   &kp SPC  &mo 7      
             >;            
@@ -124,8 +124,8 @@
             display-name = "Left";
             bindings = <
         &kp N8  &kp N9  &kp N0  &kp MINUS   &kp COMMA                   &kp N1  &kp N2   &kp N3  &kp N4                             
-&kp TAB &kp U   &kp I   &kp O   &kp P       &kp Y                       &kp Q   &kp W    &kp E   &kp R   &kp T   
-&mo 3   &kp J   &kp K   &kp L   &kp H       &kp SINGLE_QUOTE            &kp A   &kp S    &kp D   &kp F   &kp G     
+&kp TAB &kp U   &kp I   &kp O   &kp P       &kp T                       &kp Q   &kp W    &kp E   &kp R   &kp Y   
+&mo 3   &kp J   &kp K   &kp L   &kp G       &kp SINGLE_QUOTE            &kp A   &kp S    &kp D   &kp F   &kp H     
 &trans  &trans  &kp B   &kp N   &kp M       &trans                      &kp Z   &kp X    &kp C   &kp V   &trans
                         &tog 7  &mo 1      &ht_AltSpace LALT SPC        &mo 2   &kp SPC  &mo 7
             >;
