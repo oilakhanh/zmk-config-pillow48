@@ -153,6 +153,10 @@
             bindings = <&kp>, <&kp>;
         };
 
+        &lt {
+            tapping-term-ms = <150>;
+        };
+
         sk: sticky_key {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY";
