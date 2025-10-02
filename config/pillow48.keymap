@@ -24,10 +24,10 @@
             display-name = "Base";
             bindings = <
             &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N8   &kp N9   &kp N0   &kp MINUS     
-&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp G                   &kp Y   &kp U    &kp I    &kp O    &kp T    
-&mo 1       &kp A   &kp S   &kp D   &kp F   &kp ESC                   &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &tog 9                  &kp B   &kp N    &kp M    &kp K    &kp RSHFT
-                    &tog 7  &mo 3   &ht_AltSpace LALT SPC           &kp P   &kp SPC  &mo 4      
+&kp TAB     &kp Q   &kp W   &kp F   &kp P   &kp B                   &kp J   &kp L    &kp U    &kp Y    &kp O    
+&mo 1       &kp A   &kp R   &kp S   &kp T   &kp G                   &kp M   &kp N    &kp E    &kp I    &kp SINGLE_QUOTE
+&kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &tog 9                  &kp D   &kp K    &kp H    &kp F9   &kp RSHFT
+                    &tog 7  &mo 3   &ht_AltSpace LALT SPC           &mo 4   &kp SPC  &mo 7      
             >;            
         };
 
@@ -207,21 +207,6 @@
             key-positions = <11 12>;
             bindings = <&kp LGUI>;
         };
-        combo_RCTRL {
-            timeout-ms = <50>;
-            key-positions = <28 29>;
-            bindings = <&kp RCTRL>;
-        }; 
-        combo_RSHFT {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp RSHFT>;
-        };
-        combo_RALT {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp RALT>;
-        }; 
         combo_reset_left {
             timeout-ms = <50>;
             key-positions = <2 3 4>;
