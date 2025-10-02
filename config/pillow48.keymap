@@ -153,8 +153,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        &lt {
+        lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
         };
 
         sk: sticky_key {
