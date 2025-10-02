@@ -58,7 +58,7 @@
             bindings = <
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
 &kp TAB &sk LCTRL   &sk LSHFT   &sk LALT    &kp T       &kp BSPC                &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
-&mo 1   &kp LC(A)   &kp LC(S)   &sk LGUI    &kp LC(F)   &kp ENTER               &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&mo 1   &kp LC(A)   &kp LC(S)   &sk LGUI    &kp G   &kp ENTER               &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &tog 10 &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(Y)               &kp LC(PG_UP)   &kp HOME    &kp END     &kp LC(PG_DN)   &trans  
                                 &trans      &trans      &trans                  &mo 4   &kp SPC  &mo 7  
             >;  
