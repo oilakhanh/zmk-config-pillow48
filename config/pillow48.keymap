@@ -163,17 +163,17 @@
         };
 
         tdY: tap_dance_Y {
-            Compatible = "Zmk,behavior-tap-dance";
-            #Binding-cells = <2>;
-            Tapping-term-ms = <50>;
-            Bindings = <&kp Y>, <&kp T>;
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <50>;
+            bindings = <&kp Y>, <&kp T>;
         };
 
         tdH: tap_dance_H {
-            Compatible = "Zmk,behavior-tap-dance";
-            #Binding-cells = <2>;
-            Tapping-term-ms = <50>;
-            Bindings = <&kp H>, <&kp G>;
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <50>;
+            bindings = <&kp H>, <&kp G>;
         };
 
         sk: sticky_key {
