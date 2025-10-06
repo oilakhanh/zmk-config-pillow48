@@ -169,7 +169,7 @@
             Bindings = <&kp Y>, <&kp T>;
         };
 
-        tdH: tap_dance_Y {
+        tdH: tap_dance_H {
             Compatible = "Zmk,behavior-tap-dance";
             #Binding-cells = <0>;
             Tapping-term-ms = <50>;
