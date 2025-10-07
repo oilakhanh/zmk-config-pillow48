@@ -216,12 +216,12 @@
             key-positions = <11 12>;
             bindings = <&kp LGUI>;
         };
-        combo_G {
+        combo_T {
             timeout-ms = <50>;
             key-positions = <13 43>;
-            bindings = <&kp G>;
+            bindings = <&kp T>;
         };
-        combo_T {
+        combo_G {
             timeout-ms = <50>;
             key-positions = <24 43>;
             bindings = <&kp G>;
