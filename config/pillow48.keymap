@@ -226,6 +226,16 @@
             key-positions = <24 43>;
             bindings = <&kp G>;
         };
+        combo_T_W {
+            timeout-ms = <50>;
+            key-positions = <11 16>;
+            bindings = <&kp T>;
+        };
+        combo_G_W {
+            timeout-ms = <50>;
+            key-positions = <11 27>;
+            bindings = <&kp G>;
+        };
         combo_reset_left {
             timeout-ms = <50>;
             key-positions = <2 3 4>;
