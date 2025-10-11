@@ -23,9 +23,9 @@
         BASE {
             display-name = "Base";
             bindings = <
-            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N8   &kp N9   &kp N0   &kp MINUS     
+            &kp N5  &kp N1  &kp N2  &kp N3  &kp N4                        &kp N8   &kp N9   &kp N0   &kp MINUS     
 &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y   &kp U    &kp I    &kp O    &kp P    
-&mo 1       &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
+&kp LSHFT   &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
 &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &tog 9                  &kp B   &kp N    &kp M    &kp T   &kp F9
                     &tog 7  &mo 3   &ht_AltSpace LALT SPC           &mo 4   &kp SPC  &mo 7      
             >;            
@@ -35,8 +35,8 @@
             display-name = "Frequent Symbols";
             bindings = <
             &kp F13 &kp F14 &kp F15 &kp F16 &trans                      &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&kp LA(SPC) &mo 2   &mo 5   &kp F17 &kp F18 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&trans      &kp F19 &kp F20 &kp F21 &kp F22 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
+&kp LA(SPC) &trans  &mo 2   &kp F17 &kp F18 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&trans      &trans  &kp F19 &kp F20 &kp F21 &kp F22                     &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
 &trans      &trans  &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
                             &trans  &mo 3   &ht_AltSpace LALT SPC       &trans   &kp SPC  &mo 7    
             >;
@@ -47,7 +47,7 @@
             bindings = <
         &trans  &trans  &trans  &trans  &trans                                          &trans          &kp LESS_THAN       &kp GREATER_THAN    &trans             
 &trans  &trans  &kp LC(MINUS)   &kp LC(PLUS)    &trans  &trans                          &kp SEMICOLON   &kp CARET           &kp AMPS            &kp LEFT_BRACE  &kp RIGHT_BRACE   
-&trans  &trans  &trans          &kp LC(LSHFT)   &trans  &trans                          &kp EXCL        &kp AT              &kp HASH            &kp DLLR        &kp PRCNT       
+&trans  &trans  &trans          &trans          &trans  &trans                          &kp EXCL        &kp AT              &kp HASH            &kp DLLR        &kp PRCNT       
 &trans  &trans  &trans          &trans          &trans  &trans                          &trans          &kp TILDE           &kp GRAVE           &trans          &trans  
                                 &trans          &mo 3   &ht_AltSpace LALT SPC           &trans   &kp SPC  &mo 7    
             >;
