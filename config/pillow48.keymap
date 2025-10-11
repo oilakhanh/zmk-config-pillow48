@@ -57,8 +57,8 @@
             display-name = "Mods and Navigation";
             bindings = <
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
-&kp TAB &sk LCTRL   &sk LSHFT   &sk LALT    &kp T       &kp BSPC                &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
-&mo 1   &mo 1   &kp LC(S)   &sk LGUI    &mo 2   &kp ENTER               &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&kp TAB &mo 5   &sk LCTRL   &sk LSHFT   &sk LALT    &kp BSPC                &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
+&mo 1   &mo 1   &kp LC(S)   &mo 2       &sk LGUI    &kp ENTER               &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &tog 10 &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(Y)               &kp LC(PG_UP)   &kp HOME    &kp END     &kp LC(PG_DN)   &trans  
                                 &trans      &trans      &trans                  &trans   &kp SPC  &mo 7  
             >;  
@@ -79,7 +79,7 @@
             display-name = "Slow Mouse";
             bindings = <
     &trans  &trans  &trans    &trans        &trans                      &msc MOVE_Y(50)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_Y(-50)     
-&trans  &trans  &trans  &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
+&trans  &trans  &mo 6   &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
 &trans  &trans  &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-250)   &mmv MOVE_Y(250)    &mmv MOVE_X(250)    &trans
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &msc MOVE_X(-20)    &msc MOVE_X(20)     &trans              &trans  
                         &trans  &mo 3       &ht_AltSpace LALT SPC       &trans   &kp SPC  &mo 7    
