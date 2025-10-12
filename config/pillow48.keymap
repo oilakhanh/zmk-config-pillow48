@@ -23,11 +23,11 @@
         BASE {
             display-name = "Base";
             bindings = <
-            &kp ESC &kp N1  &kp N2  &kp N3  &kp N4                        &kp N8   &kp N9   &kp N0   &kp MINUS     
-&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y   &kp U    &kp I    &kp O    &kp P    
-&kp LSHFT   &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
-&kp LALT    &tog 9  &kp Z   &kp X   &kp C   &kp V                   &kp B   &kp N    &kp M    &kp T   &kp F9
-                    &tog 7  &mo 1   &ht_AltSpace LALT SPC           &mo 4   &kp SPC  &mo 7      
+&kp N1  &kp N2  &kp N3  &kp N4  &none                      &kp N8   &kp N9   &kp N0   &kp MINUS     
+&kp Q   &kp W   &kp E   &kp R   &kp T   &none                   &kp Y   &kp U    &kp I    &kp O    &kp P    
+&kp A   &kp S   &kp D   &kp F   &kp G   &none                &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
+&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp T   &kp F9
+        &ht_AltSpace LSHFT SPC  &mo_tog 9 7 &mo 1              &mo 4   &kp SPC  &mo 7      
             >;            
         };
 
@@ -35,10 +35,10 @@
             display-name = "Mods and Navigation";
             bindings = <
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
-&kp TAB &mo 5   &sk LCTRL   &sk LSHFT   &sk LALT    &kp BSPC                &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
-&mo 2   &mo 2   &kp LC(S)   &mo 3       &sk LGUI    &kp ENTER               &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&kp TAB &sk LCTRL   &sk LSHFT   &sk LALT    &kp BSPC                &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
+&mo 5   &mo 2   &kp LC(S)   &mo 3       &sk LGUI    &kp ENTER               &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &tog 10 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PG_UP)   &kp HOME    &kp END     &kp LC(PG_DN)   &trans  
-                                &trans      &trans      &trans                  &trans   &kp SPC  &mo 7  
+                                &trans      &trans      &trans                  &trans      &trans      &trans  
             >;  
         };
 
@@ -49,7 +49,7 @@
 &kp LA(SPC) &trans  &mo 3   &kp F17 &kp F18 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
 &trans      &trans  &kp F19 &kp F20 &kp F21 &kp F22                     &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
 &trans      &trans  &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
-                            &trans  &mo 1   &ht_AltSpace LALT SPC       &trans   &kp SPC  &mo 7    
+                            &trans      &trans      &trans                  &trans      &trans      &trans     
             >;
         };
 
@@ -60,7 +60,7 @@
 &trans  &trans  &kp LC(MINUS)   &kp LC(PLUS)    &trans  &trans                          &kp SEMICOLON   &kp CARET           &kp AMPS            &kp LEFT_BRACE  &kp RIGHT_BRACE   
 &trans  &trans  &trans          &trans          &trans  &trans                          &kp EXCL        &kp AT              &kp HASH            &kp DLLR        &kp PRCNT       
 &trans  &trans  &trans          &trans          &trans  &trans                          &trans          &kp TILDE           &kp GRAVE           &trans          &trans  
-                                &trans          &mo 1   &ht_AltSpace LALT SPC           &trans   &kp SPC  &mo 7    
+                                &trans      &trans      &trans                          &trans      &trans      &trans    
             >;
         };
 
@@ -71,7 +71,7 @@
 &kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &kp F12                 &sl RALT    &sl LGUI    &sl RSHFT   &sl RCTRL   &trans   
 &sl 10      &kt LCTRL   &kt LSHFT   &kt LGUI    &kt LALT    &trans                  &kp RALT    &kp LGUI    &kp RSHFT   &kp RCTRL      &trans      
 &kp F1      &kp F3      &kp F6      &kp F7      &kp F9      &kp F10                 &kp INS     &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
-                                    &mo 4       &trans      &trans                  &trans   &kp SPC  &mo 7     
+                                    &trans      &trans      &trans                  &trans      &trans      &trans      
             >;
         };
 
@@ -79,10 +79,10 @@
             display-name = "Slow Mouse";
             bindings = <
     &trans  &trans  &trans    &trans        &trans                      &msc MOVE_Y(50)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_Y(-50)     
-&trans  &trans  &mo 6   &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
+&trans  &mo 6   &trans  &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
 &trans  &trans  &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-250)   &mmv MOVE_Y(250)    &mmv MOVE_X(250)    &trans
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &msc MOVE_X(-20)    &msc MOVE_X(20)     &trans              &trans  
-                        &trans  &mo 1       &ht_AltSpace LALT SPC       &trans   &kp SPC  &mo 7    
+                        &trans      &trans      &trans                  &trans      &trans      &trans     
             >;
         };
 
@@ -93,7 +93,7 @@
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-1000)  &mkp RCLK           &trans    
 &trans  &trans  &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &trans
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &trans              &trans              &trans              &trans
-                        &trans  &mo 1       &ht_AltSpace LALT SPC       &trans   &kp SPC  &mo 7    
+                        &trans      &trans      &trans                  &trans      &trans      &trans     
             >;
         };
 
@@ -104,7 +104,7 @@
 &kp TAB     &kp N5  &kp N6      &kp N7      &kp N8      &kp BSPC                    &kp N5      &kp N6      &kp N7          &kp N8      &kp BSPC       
 &mo 2       &kp N9  &kp N0      &kp COMMA   &kp DOT     &kp ENTER                   &kp N9      &kp N0      &kp COMMA       &kp DOT     &kp ENTER 
 &kp LSHFT   &trans  &kp MINUS   &kp SLASH   &kp EQUAL   &trans                      &trans      &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
-                                &trans      &mo 1       &ht_AltSpace LALT SPC       &trans       &kp SPC     &mo 7
+                                &trans      &trans      &trans                  &trans      &trans      &trans 
             >;
         };
 
@@ -115,7 +115,7 @@
 &kp TAB     &kp KP_N5   &kp KP_N6       &kp KP_N7       &kp KP_N8       &kp BSPC                    &kp KP_N5   &kp KP_N6       &kp KP_N7           &kp KP_N8       &kp BSPC       
 &mo 2       &kp KP_N9   &kp KP_N0       &kp KP_COMMA    &kp KP_DOT      &kp ENTER                   &kp KP_N9   &kp KP_N0       &kp KP_COMMA        &kp KP_DOT      &kp ENTER 
 &kp LSHFT   &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY &kp KP_DIVIDE   &kp KP_EQUAL                &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY     &kp KP_DIVIDE   &kp KP_EQUAL   
-                                        &tog 7          &mo 1           &ht_AltSpace LALT SPC       &trans       &kp SPC         &mo 7
+                                        &trans          &trans          &trans                      &trans      &trans      &trans 
             >;
         };
 
@@ -126,7 +126,7 @@
 &kp TAB &kp U   &kp I   &kp O   &kp P       &kp Y                       &kp Q   &kp W    &kp E   &kp R   &kp T   
 &mo 2   &kp J   &kp K   &kp L   &kp H       &kp SINGLE_QUOTE            &kp A   &kp S    &kp D   &kp F   &kp G     
 &trans  &trans  &kp B   &kp N   &kp M       &trans                      &kp Z   &kp X    &kp C   &kp V   &trans
-                        &tog 7  &mo 1       &ht_AltSpace LALT SPC       &trans   &kp SPC  &mo 7
+                        &trans  &trans      &trans                      &trans      &trans      &trans 
             >;
         };
  
@@ -151,6 +151,15 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        mo_tog: mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&mo>, <&tog>;
+            display-name = "Mo-Tog";
         };
 
         lt: layer_tap {
