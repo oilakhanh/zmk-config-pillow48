@@ -14,7 +14,7 @@
 #define NUM1 7
 #define NUM2 8
 #define FLIP 9
-#define MEDIA 10
+#define PUNC 10
 
 / {
     keymap {
@@ -26,19 +26,19 @@
 &kp N1  &kp N2  &kp N3  &kp N4  &none                      &kp N8   &kp N9   &kp N0   &kp MINUS     
 &kp Q   &kp W   &kp E   &kp R   &kp T   &none                   &kp Y   &kp U    &kp I    &kp O    &kp P    
 &kp A   &kp S   &kp D   &kp F   &kp G   &none                &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
-&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp T   &kp F9
-        &ht_AltSpace LSHFT SPC  &mo_tog 9 7 &mo 1              &mo 4   &kp SPC  &mo 7      
+&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp PLUS   &kp F9
+        &ht_AltSpace LSHFT SPC  &mo 1   &mo_tog 9 7         &mo 7   &kp SPC  &mo 4      
             >;            
         };
 
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-       &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(BSPC)    &kp BSPC    &kp DEL     &kp LC(DEL)
-&kp TAB &sk LCTRL   &sk LSHFT   &sk LALT    &kp BSPC                &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
-&mo 5   &mo 2   &kp LC(S)   &mo 3       &sk LGUI    &kp ENTER               &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
-&tog 10 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)           &kp LC(PG_UP)   &kp HOME    &kp END     &kp LC(PG_DN)   &trans  
-                                &trans      &trans      &trans                  &trans      &trans      &trans  
+       &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(PG_UP)    &kp BSPC    &kp DEL     &kp LC(PG_DN)
+&kp TAB     &sk LCTRL   &sk LSHFT   &sk LALT    &kp BSPC    &trans            &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
+&mo 2       &kp LC(S)   &mo 5       &sk LGUI    &kp ENTER   &trans            &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS   &kp HOME    &kp END     &kp MINUS   &trans  
+                                    &trans      &trans      &trans                  &mo 5      &trans      &trans  
             >;  
         };
 
@@ -46,21 +46,21 @@
             display-name = "Frequent Symbols";
             bindings = <
             &kp F13 &kp F14 &kp F15 &kp F16 &trans                      &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&kp LA(SPC) &trans  &mo 3   &kp F17 &kp F18 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&trans      &trans  &kp F19 &kp F20 &kp F21 &kp F22                     &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
-&trans      &trans  &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
-                            &trans      &trans      &trans                  &trans      &trans      &trans     
+&kp LA(SPC) &mo 3   &kp F17 &kp F18 &kp F19 &trans                     &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&trans      &kp F20 &kp F21 &kp F22 &kp F23 &trans                    &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
+&trans      &trans  &trans  &kp F24 &trans  &trans                    &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
+                            &trans  &trans  &trans                  &trans      &trans      &trans     
             >;
         };
 
         SYM2 {
             display-name = "Less Frequent Symbols";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans                                          &trans          &kp LESS_THAN       &kp GREATER_THAN    &trans             
-&trans  &trans  &kp LC(MINUS)   &kp LC(PLUS)    &trans  &trans                          &kp SEMICOLON   &kp CARET           &kp AMPS            &kp LEFT_BRACE  &kp RIGHT_BRACE   
-&trans  &trans  &trans          &trans          &trans  &trans                          &kp EXCL        &kp AT              &kp HASH            &kp DLLR        &kp PRCNT       
-&trans  &trans  &trans          &trans          &trans  &trans                          &trans          &kp TILDE           &kp GRAVE           &trans          &trans  
-                                &trans      &trans      &trans                          &trans      &trans      &trans    
+        &trans  &trans  &trans  &trans  &trans                          &trans          &kp LESS_THAN       &kp GREATER_THAN    &trans             
+&trans  &trans  &trans  &trans  &trans  &trans                          &kp SEMICOLON   &kp CARET           &kp AMPS            &kp LEFT_BRACE  &kp RIGHT_BRACE   
+&trans  &trans  &trans  &trans  &trans  &trans                          &kp EXCL        &kp AT              &kp HASH            &kp DLLR        &kp PRCNT       
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans          &kp TILDE           &kp GRAVE           &trans          &trans  
+                        &trans  &trans  &trans                          &trans      &trans      &trans    
             >;
         };
 
@@ -68,8 +68,8 @@
             display-name = "FN keys and mostly unused symbols";
             bindings = <
     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_CLR      &bootloader                 &kp SCROLLLOCK  &trans      &trans      &trans                                      
-&kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &kp F12                 &sl RALT    &sl LGUI    &sl RSHFT   &sl RCTRL   &trans   
-&sl 10      &kt LCTRL   &kt LSHFT   &kt LGUI    &kt LALT    &trans                  &kp RALT    &kp LGUI    &kp RSHFT   &kp RCTRL      &trans      
+&kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &sl RALT    &sl LGUI    &sl RSHFT   &sl RCTRL   &trans   
+&kt LCTRL   &kt LSHFT   &kt LGUI    &kt LALT    &kp F12     &trans                  &kp RALT    &kp LGUI    &kp RSHFT   &kp RCTRL   &trans      
 &kp F1      &kp F3      &kp F6      &kp F7      &kp F9      &kp F10                 &kp INS     &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
                                     &trans      &trans      &trans                  &trans      &trans      &trans      
             >;
@@ -78,11 +78,11 @@
         MOUSE1 { 
             display-name = "Slow Mouse";
             bindings = <
-    &trans  &trans  &trans    &trans        &trans                      &msc MOVE_Y(50)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_Y(-50)     
-&trans  &mo 6   &trans  &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
-&trans  &trans  &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-250)   &mmv MOVE_Y(250)    &mmv MOVE_X(250)    &trans
-&trans  &trans  &trans  &trans  &trans      &trans                      &trans      &msc MOVE_X(-20)    &msc MOVE_X(20)     &trans              &trans  
-                        &trans      &trans      &trans                  &trans      &trans      &trans     
+    &trans  &trans  &trans    &trans        &trans                      &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
+&trans  &mo 6   &mo 6   &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
+&trans  &trans  &trans  &mo 6   &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-250)   &mmv MOVE_Y(250)    &mmv MOVE_X(250)    &trans
+&trans  &trans  &trans  &trans  &trans      &trans                      &trans      &trans              &trans              &trans              &trans  
+                        &trans  &trans      &trans                      &trans      &trans      &trans     
             >;
         };
 
@@ -93,17 +93,17 @@
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-1000)  &mkp RCLK           &trans    
 &trans  &trans  &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &trans
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &trans              &trans              &trans              &trans
-                        &trans      &trans      &trans                  &trans      &trans      &trans     
+                        &trans  &trans      &trans                      &trans      &trans      &trans     
             >;
         };
 
         NUM1 {
             display-name = "Base numbers";
             bindings = <
-            &kp N1  &kp N2      &kp N3      &kp N4      &tog 8                      &kp N1      &kp N2      &kp N3          &kp N4       
-&kp TAB     &kp N5  &kp N6      &kp N7      &kp N8      &kp BSPC                    &kp N5      &kp N6      &kp N7          &kp N8      &kp BSPC       
-&mo 2       &kp N9  &kp N0      &kp COMMA   &kp DOT     &kp ENTER                   &kp N9      &kp N0      &kp COMMA       &kp DOT     &kp ENTER 
-&kp LSHFT   &trans  &kp MINUS   &kp SLASH   &kp EQUAL   &trans                      &trans      &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
+            &kp N1  &kp N2      &kp N3      &kp N4      &trans                      &kp N1      &kp N2      &kp N3          &kp N4       
+&kp N5  &kp N6      &kp N7      &kp N8      &kp BSPC    &trans                  &kp N5      &kp N6      &kp N7          &kp N8      &kp BSPC       
+&kp N9  &kp N0      &kp COMMA   &kp DOT     &kp ENTER   &trans                  &kp N9      &kp N0      &kp COMMA       &kp DOT     &kp ENTER 
+&kp TAB &kp PLUS    &kp MINUS   &kp SLASH   &kp EQUAL   &trans                  &trans      &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
                                 &trans      &trans      &trans                  &trans      &trans      &trans 
             >;
         };
@@ -111,33 +111,33 @@
         NUM2 {
             display-name = "Numpad numbers";
             bindings = <
-            &kp KP_N1   &kp KP_N2       &kp KP_N3       &kp KP_N4       &trans                      &kp KP_N1   &kp KP_N2       &kp KP_N3           &kp KP_N4       
-&kp TAB     &kp KP_N5   &kp KP_N6       &kp KP_N7       &kp KP_N8       &kp BSPC                    &kp KP_N5   &kp KP_N6       &kp KP_N7           &kp KP_N8       &kp BSPC       
-&mo 2       &kp KP_N9   &kp KP_N0       &kp KP_COMMA    &kp KP_DOT      &kp ENTER                   &kp KP_N9   &kp KP_N0       &kp KP_COMMA        &kp KP_DOT      &kp ENTER 
-&kp LSHFT   &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY &kp KP_DIVIDE   &kp KP_EQUAL                &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY     &kp KP_DIVIDE   &kp KP_EQUAL   
-                                        &trans          &trans          &trans                      &trans      &trans      &trans 
+            &kp KP_N1   &kp KP_N2       &kp KP_N3       &kp KP_N4           &trans                      &kp KP_N1   &kp KP_N2       &kp KP_N3           &kp KP_N4       
+&kp KP_N5   &kp KP_N6       &kp KP_N7       &kp KP_N8       &kp BSPC        &trans                      &kp KP_N5   &kp KP_N6       &kp KP_N7           &kp KP_N8       &kp BSPC       
+&kp KP_N9   &kp KP_N0       &kp KP_COMMA    &kp KP_DOT      &kp ENTER       &trans                      &kp KP_N9   &kp KP_N0       &kp KP_COMMA        &kp KP_DOT      &kp ENTER 
+&kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY &kp KP_DIVIDE   &kp KP_EQUAL    &trans                      &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY     &kp KP_DIVIDE   &kp KP_EQUAL   
+                                            &trans          &trans          &trans                      &trans      &trans      &trans 
             >;
         };
 
         FLIP {
             display-name = "Left";
             bindings = <
-        &kp N8  &kp N9  &kp N0  &kp MINUS   &kp COMMA                   &kp N1  &kp N2   &kp N3  &kp N4                             
-&kp TAB &kp U   &kp I   &kp O   &kp P       &kp Y                       &kp Q   &kp W    &kp E   &kp R   &kp T   
-&mo 2   &kp J   &kp K   &kp L   &kp H       &kp SINGLE_QUOTE            &kp A   &kp S    &kp D   &kp F   &kp G     
-&trans  &trans  &kp B   &kp N   &kp M       &trans                      &kp Z   &kp X    &kp C   &kp V   &trans
-                        &trans  &trans      &trans                      &trans      &trans      &trans 
+        &kp N8  &kp N9  &kp N0  &kp MINUS   &trans                          &kp N1  &kp N2   &kp N3  &kp N4                             
+&kp U   &kp I   &kp O   &kp P   &kp Y               &trans              &kp Q   &kp W    &kp E   &kp R   &kp T   
+&kp J   &kp K   &kp L   &kp H   &kp SINGLE_QUOTE    &trans              &kp A   &kp S    &kp D   &kp F   &kp G     
+&kp TAB &kp B   &kp N   &kp M   &tog 10             &trans              &kp Z   &kp X    &kp C   &kp V   &trans
+                        &trans  &trans              &trans              &trans  &trans   &trans 
             >;
         };
  
-        MEDIA {
+        PUNC {
             display-name = "Punctuation";
             bindings = <
-            &kp CARET   &kp AMPS    &kp STAR            &kp GRAVE           &trans                      &trans  &trans  &trans  &trans      
-&kp TAB     &kp LPAR    &kp RPAR    &kp SEMICOLON       &kp BACKSLASH       &trans                      &trans  &trans  &trans  &trans  &trans       
-&mo 2       &kp HOME    &kp END     &kp DEL             &kp LESS_THAN       &kp GREATER_THAN            &trans  &trans  &trans  &trans  &trans            
-&kp LSHFT   &trans      &kp SLASH   &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &trans                      &trans  &trans  &trans  &trans  &trans       
-                                    &tog 7              &mo 1               &ht_AltSpace LALT SPC       &mo 4   &kp SPC &mo 7
+            &kp CARET   &kp AMPS    &kp STAR            &kp GRAVE               &trans                      &trans  &trans  &trans  &trans      
+&kp LPAR    &kp RPAR    &kp SEMICOLON   &kp BACKSLASH       &trans              &trans                  &trans  &trans  &trans  &trans  &trans       
+&kp HOME    &kp END     &kp DEL         &kp SLASH           &trans              &trans                  &trans  &trans  &trans  &trans  &trans            
+&kp LESS_THAN     &kp GREATER_THAN      &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &trans                  &trans  &trans  &trans  &trans  &trans       
+                                        &trans              &trans              &trans                  &trans  &trans   &trans
             >;
         };
     };
@@ -190,60 +190,20 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_N6 {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp N6>;
-        };
-        combo_N7 {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp N7>;
-        };
-        combo_AppSwitch {
-            timeout-ms = <50>;
-            key-positions = <9 10>;
-            bindings = <&kp LA(TAB)>;
-        };
         combo_LCTRL {
             timeout-ms = <50>;
-            key-positions = <21 22>;
+            key-positions = <31 32>;
             bindings = <&kp LCTRL>;
-        };
-        combo_LSHFT {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp LSHFT>;
         };
         combo_LALT {
             timeout-ms = <50>;
-            key-positions = <22 23>;
+            key-positions = <32 33>;
             bindings = <&kp LALT>;
         };           
         combo_LGUI {
             timeout-ms = <50>;
-            key-positions = <11 12>;
+            key-positions = <11 43>;
             bindings = <&kp LGUI>;
-        };
-        combo_T {
-            timeout-ms = <50>;
-            key-positions = <13 43>;
-            bindings = <&kp T>;
-        };
-        combo_G {
-            timeout-ms = <50>;
-            key-positions = <24 43>;
-            bindings = <&kp G>;
-        };
-        combo_T_W {
-            timeout-ms = <50>;
-            key-positions = <11 16>;
-            bindings = <&kp T>;
-        };
-        combo_G_W {
-            timeout-ms = <50>;
-            key-positions = <11 27>;
-            bindings = <&kp G>;
         };
         combo_reset_left {
             timeout-ms = <50>;
@@ -260,24 +220,34 @@
             key-positions = <42 43 44>;
             bindings = <&to 0>;
         };
+        combo_NUM2_tog {
+            timeout-ms = <50>;
+            key-positions = <42 9>;
+            bindings = <&tog 8>;
+        };  
+        combo_NUM2_sl {
+            timeout-ms = <50>;
+            key-positions = <42 10>;
+            bindings = <&sl 8>;
+        };
         combo_FUNC_tog {
             timeout-ms = <50>;
-            key-positions = <20 21 22>;
+            key-positions = <42 21>;
             bindings = <&tog 2>;
         };
         combo_FUNC_sl {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <42 20>;
             bindings = <&sl 2>;
         };
         combo_PUNC_tog {
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <42 31>;
             bindings = <&tog 10>;
         };
         combo_PUNC_sl {
             timeout-ms = <50>;
-            key-positions = <31 32 33>;
+            key-positions = <42 32>;
             bindings = <&sl 10>;
         };
     };
