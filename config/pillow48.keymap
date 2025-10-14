@@ -15,6 +15,7 @@
 #define NUM2 8
 #define FLIP 9
 #define PUNC 10
+#define APPS 11
 
 / {
     keymap {
@@ -23,10 +24,10 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &none                      &kp N8   &kp N9   &kp N0   &kp MINUS     
-&kp Q   &kp W   &kp E   &kp R   &kp T   &none                   &kp Y   &kp U    &kp I    &kp O    &kp P    
-&kp A   &kp S   &kp D   &kp F   &kp G   &none                &kp H   &kp J    &kp K    &kp L    &kp SINGLE_QUOTE
-&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp PLUS   &kp F9
+&kp N1  &kp N2  &kp N3  &kp N4  &kp ESC                     &kp N8   &kp N9   &kp N0   &kp MINUS     
+&kp Q   &kp W   &kp E   &kp R   &kp T   &kp LGUI            &kp Y   &kp U    &kp I    &kp O     &kp P    
+&kp A   &kp S   &kp D   &kp F   &kp G   &sl 11              &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
+&kp TAB &kp Z   &kp X   &kp C   &kp V   &kp LALT            &kp B   &kp N    &kp M    &kp PLUS  &kp F9
         &ht_AltSpace LSHFT SPC  &mo 1   &mo_tog 9 7         &mo 7   &kp SPC  &mo 4      
             >;            
         };
@@ -34,11 +35,11 @@
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-       &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(PG_UP)    &kp BSPC    &kp DEL     &kp LC(PG_DN)
-&kp TAB     &sk LCTRL   &sk LSHFT   &sk LALT    &kp BSPC    &trans            &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
-&mo 2       &kp LC(S)   &mo 5       &sk LGUI    &kp ENTER   &trans            &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
-&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS   &kp HOME    &kp END     &kp MINUS   &trans  
-                                    &trans      &trans      &trans                  &mo 5      &trans      &trans  
+       &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
+&kp TAB     &sk LCTRL   &sk LSHFT   &sk LALT    &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
+&mo 2       &kp LC(S)   &mo 5       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp MINUS       &kp HOME    &kp END     &kp PLUS   &trans  
+                                    &trans      &trans      &trans              &mo 5           &trans      &trans  
             >;  
         };
 
@@ -140,6 +141,17 @@
                                         &trans              &trans              &trans                  &trans  &trans   &trans
             >;
         };
+
+        APPS {
+            display-name = "Quick access to apps";
+            bindings = <
+        &kp LC(LS(LA(F1)))  &kp LC(LS(LA(F2)))  &kp LC(LS(LA(F3)))  &kp LC(LS(LA(F4)))   &kp LC(LS(LA(F5)))                            &kp LS(LA(LC(F1)))  &kp LS(LA(LC(F2)))   &kp LS(LA(LC(F3)))  &kp LS(LA(LC(F4)))                             
+&kp LC(LS(LA(F6)))  &kp LC(LS(LA(F7)))  &kp LC(LS(LA(F8)))  &kp LC(LS(LA(F9)))  &kp LC(LS(LA(F10))) &kp LC(LS(LA(F11)))             &kp LS(LA(LC(F5)))  &kp LS(LA(LC(F6)))  &kp LS(LA(LC(F7)))  &kp LS(LA(LC(F8)))  &kp LS(LA(LC(F9)))   
+&kp LC(LS(LA(F12))) &kp LC(LS(LA(F13))) &kp LC(LS(LA(F14))) &kp LC(LS(LA(F15))) &kp LC(LS(LA(F16))) &trans                          &kp LS(LA(LC(F10))) &kp LS(LA(LC(F11))) &kp LS(LA(LC(F12))) &kp LS(LA(LC(F13))) &kp LS(LA(LC(F14)))     
+&kp LGUI            &kp LC(LS(LA(F17))) &kp LC(LS(LA(F18))) &kp LC(LS(LA(F19))) &kp LC(LS(LA(F20))) &LC(LS(LA(F21)))                &kp LS(LA(LC(F15))) &kp LS(LA(LC(F16))) &kp LS(LA(LC(F17))) &kp LS(LA(LC(F18))) &kp LS(LA(LC(F19)))
+                                        &kp LC(LS(LA(F22))) &kp LC(LS(LA(F23))) &kp LC(LS(LA(F24)))                                 &kp LS(LA(LC(F20))) &kp LS(LA(LC(F21))) &kp LS(LA(LC(F22))) 
+            >;
+        };
     };
 
     behaviors {
@@ -190,21 +202,6 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_LCTRL {
-            timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&kp LCTRL>;
-        };
-        combo_LALT {
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&kp LALT>;
-        };           
-        combo_LGUI {
-            timeout-ms = <50>;
-            key-positions = <11 43>;
-            bindings = <&kp LGUI>;
-        };
         combo_reset_left {
             timeout-ms = <50>;
             key-positions = <2 3 4>;
@@ -222,12 +219,12 @@
         };
         combo_NUM2_tog {
             timeout-ms = <50>;
-            key-positions = <42 9>;
+            key-positions = <42 10>;
             bindings = <&tog 8>;
         };  
         combo_NUM2_sl {
             timeout-ms = <50>;
-            key-positions = <42 10>;
+            key-positions = <42 9>;
             bindings = <&sl 8>;
         };
         combo_FUNC_tog {
@@ -242,12 +239,12 @@
         };
         combo_PUNC_tog {
             timeout-ms = <50>;
-            key-positions = <42 31>;
+            key-positions = <42 32>;
             bindings = <&tog 10>;
         };
         combo_PUNC_sl {
             timeout-ms = <50>;
-            key-positions = <42 32>;
+            key-positions = <42 31>;
             bindings = <&sl 10>;
         };
     };
