@@ -158,7 +158,7 @@
             display-name = "All Symbols";
             bindings = <
                 &kp EXCL        &kp AT  &kp HASH    &kp DLLR        &trans                                      &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&&kp PRCNT      &kp CARET       &kp AMPS            &kp LEFT_BRACE  &kp RIGHT_BRACE &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&kp PRCNT      &kp CARET       &kp AMPS            &kp LEFT_BRACE  &kp RIGHT_BRACE &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
 &kp SEMICOLON   &kp LESS_THAN   &kp GREATER_THAN    &kp TILDE       &kp GRAVE       &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
 &trans          &trans          &trans              &trans &trans   &trans                                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
                                 &trans              &trans          &trans                                      &trans      &trans      &trans     
