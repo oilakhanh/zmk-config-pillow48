@@ -148,7 +148,7 @@
         &kp LC(LS(LA(F1)))  &kp LC(LS(LA(F2)))  &kp LC(LS(LA(F3)))  &kp LC(LS(LA(F4)))   &kp LC(LS(LA(F5)))                            &kp LS(LA(LC(F1)))  &kp LS(LA(LC(F2)))   &kp LS(LA(LC(F3)))  &kp LS(LA(LC(F4)))                             
 &kp LC(LS(LA(F6)))  &kp LC(LS(LA(F7)))  &kp LC(LS(LA(F8)))  &kp LC(LS(LA(F9)))  &kp LC(LS(LA(F10))) &kp LC(LS(LA(F11)))             &kp LS(LA(LC(F5)))  &kp LS(LA(LC(F6)))  &kp LS(LA(LC(F7)))  &kp LS(LA(LC(F8)))  &kp LS(LA(LC(F9)))   
 &kp LC(LS(LA(F12))) &kp LC(LS(LA(F13))) &kp LC(LS(LA(F14))) &kp LC(LS(LA(F15))) &kp LC(LS(LA(F16))) &trans                          &kp LS(LA(LC(F10))) &kp LS(LA(LC(F11))) &kp LS(LA(LC(F12))) &kp LS(LA(LC(F13))) &kp LS(LA(LC(F14)))     
-&kp LGUI            &kp LC(LS(LA(F17))) &kp LC(LS(LA(F18))) &kp LC(LS(LA(F19))) &kp LC(LS(LA(F20))) &LC(LS(LA(F21)))                &kp LS(LA(LC(F15))) &kp LS(LA(LC(F16))) &kp LS(LA(LC(F17))) &kp LS(LA(LC(F18))) &kp LS(LA(LC(F19)))
+&kp LGUI            &kp LC(LS(LA(F17))) &kp LC(LS(LA(F18))) &kp LC(LS(LA(F19))) &kp LC(LS(LA(F20))) &kp LC(LS(LA(F21)))             &kp LS(LA(LC(F15))) &kp LS(LA(LC(F16))) &kp LS(LA(LC(F17))) &kp LS(LA(LC(F18))) &kp LS(LA(LC(F19)))
                                         &kp LC(LS(LA(F22))) &kp LC(LS(LA(F23))) &kp LC(LS(LA(F24)))                                 &kp LS(LA(LC(F20))) &kp LS(LA(LC(F21))) &kp LS(LA(LC(F22))) 
             >;
         };
