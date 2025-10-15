@@ -26,8 +26,8 @@
             bindings = <
 &kp N1  &kp N2  &kp N3  &kp N4  &kp ESC                     &kp N8   &kp N9   &kp N0   &kp MINUS     
 &kp Q   &kp W   &kp E   &kp R   &kp T   &kp LGUI            &kp Y   &kp U    &kp I    &kp O     &kp P    
-&lt 2 A   &kp S   &kp D   &kp F   &kp G   &sl 11              &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
-&kp TAB &kp Z   &kp X   &kp C   &kp V   &tog 9            &kp B   &kp N    &kp M    &kp F9    &mo 4
+&lt 2 A   &kp S   &kp D   &kp F   &kp G   &sl 11            &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
+&kp TAB &kp Z   &kp X   &kp C   &kp V   &tog 9              &kp B   &kp N    &kp M    &kp F9    &mo 4
         &ht_AltSpace LSHFT SPC  &mo 1   &mo_tog 9 7         &mo 7   &kp SPC  &mo 4      
             >;            
         };
@@ -47,9 +47,9 @@
             display-name = "Frequent Symbols";
             bindings = <
             &kp F13 &kp F14 &kp F15 &kp F16 &trans                      &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&kp LA(SPC) &mo 3   &kp F17 &kp F18 &kp F19 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&trans      &kp F20 &kp F21 &kp F22 &kp F23 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
-&trans      &trans  &trans  &kp F24 &trans  &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
+&kp LA(SPC) &mo 3   &mo 5   &kp F17 &kp F18 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&trans      &kp F19 &kp F20 &kp F21 &kp F22 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
+&trans      &trans  &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
                             &trans  &trans  &trans                      &trans      &trans      &trans     
             >;
         };
@@ -80,7 +80,7 @@
             display-name = "Slow Mouse";
             bindings = <
     &trans  &trans  &trans    &trans        &trans                      &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
-&trans  &mo 6   &mo 6   &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
+&trans  &trans  &trans  &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
 &trans  &trans  &trans  &mo 6   &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-250)   &mmv MOVE_Y(250)    &mmv MOVE_X(250)    &trans
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &trans              &trans              &trans              &trans  
                         &trans  &trans      &trans                      &trans      &trans      &trans     
@@ -104,7 +104,7 @@
             &kp N1  &kp N2      &kp N3      &kp N4      &trans                      &kp N1      &kp N2      &kp N3          &kp N4       
 &kp N5  &kp N6      &kp N7      &kp N8      &kp BSPC    &trans                  &kp N5      &kp N6      &kp N7          &kp N8      &kp BSPC       
 &kp N9  &kp N0      &kp COMMA   &kp DOT     &kp ENTER   &trans                  &kp N9      &kp N0      &kp COMMA       &kp DOT     &kp ENTER 
-&kp TAB &kp PLUS    &kp MINUS   &kp SLASH   &kp EQUAL   &trans                  &trans      &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
+&kp TAB &kp PLUS    &kp MINUS   &kp SLASH   &kp EQUAL   &trans                  &kp PLUS    &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
                                 &trans      &trans      &trans                  &trans      &trans      &trans 
             >;
         };
@@ -150,17 +150,6 @@
 &kp LC(LS(LA(F12))) &kp LC(LS(LA(F13))) &kp LC(LS(LA(F14))) &kp LC(LS(LA(F15))) &kp LC(LS(LA(F16))) &trans                          &kp LS(LA(LC(F10))) &kp LS(LA(LC(F11))) &kp LS(LA(LC(F12))) &kp LS(LA(LC(F13))) &kp LS(LA(LC(F14)))     
 &kp LGUI            &kp LC(LS(LA(F17))) &kp LC(LS(LA(F18))) &kp LC(LS(LA(F19))) &kp LC(LS(LA(F20))) &kp LC(LS(LA(F21)))             &kp LS(LA(LC(F15))) &kp LS(LA(LC(F16))) &kp LS(LA(LC(F17))) &kp LS(LA(LC(F18))) &kp LS(LA(LC(F19)))
                                         &kp LC(LS(LA(F22))) &kp LC(LS(LA(F23))) &kp LC(LS(LA(F24)))                                 &kp LS(LA(LC(F20))) &kp LS(LA(LC(F21))) &kp LS(LA(LC(F22))) 
-            >;
-        };
-
-        SYMB {
-            display-name = "All Symbols";
-            bindings = <
-                &kp EXCL        &kp AT  &kp HASH    &kp DLLR        &trans                                      &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&kp PRCNT      &kp CARET       &kp AMPS            &kp LEFT_BRACE  &kp RIGHT_BRACE &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&kp SEMICOLON   &kp LESS_THAN   &kp GREATER_THAN    &kp TILDE       &kp GRAVE       &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
-&trans          &trans          &trans              &trans &trans   &trans                                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
-                                &trans              &trans          &trans                                      &trans      &trans      &trans     
             >;
         };
     };
