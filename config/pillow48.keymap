@@ -27,9 +27,9 @@
             bindings = <
 &kp N1  &kp N2  &kp N3  &kp N4  &kp ESC                     &kp N8   &kp N9   &kp N0   &kp MINUS     
 &kp Q   &kp W   &kp E   &kp R   &kp T   &kp LGUI            &kp Y   &kp U    &kp I    &kp O     &kp P    
-&kp A   &kp S   &kp D   &kp F   &kp G   &sl 11            &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
-&kp TAB &kp Z   &kp X   &kp C   &kp V   &tog 9              &kp B   &kp N    &kp M    &kp F9    &mo 4
-        &ht_AltSpace LSHFT SPC  &mo 1   &mo_tog 9 7         &mo 7   &kp SPC  &mo 4      
+&kp A   &kp S   &kp D   &kp F   &kp G   &sl 11              &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
+&kp TAB &kp Z   &kp X   &kp C   &kp V   &tog 8              &kp B   &kp N    &kp M    &kp F9    &mo 1
+        &mo_tog 9 7     &mo 1   &ht_AltSpace LSHFT SPC      &mo 7   &kp SPC  &mo 4      
             >;            
         };
 
@@ -37,10 +37,10 @@
             display-name = "Mods and Navigation";
             bindings = <
        &kp ESC      &kp UP   &kp LEFT   &kp RIGHT   &kp DOWN                    &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
-&mo 2     &sk LCTRL   &sk LSHFT   &kp TAB    &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
-&sk LALT       &kp LC(S)   &mo 5       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
+&sk LALT    &kp LC(S)   &mo 5       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp MINUS       &kp HOME    &kp END     &kp PLUS   &trans  
-                                    &trans      &trans      &trans              &kp SPC           &mo 12      &trans  
+                                    &trans      &trans      &trans              &kp SPC         &mo 12      &trans  
             >;  
         };
 
@@ -48,9 +48,9 @@
             display-name = "Frequent Symbols";
             bindings = <
             &kp F13 &kp F14 &kp F15 &kp F16 &trans                      &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&kp LA(SPC) &mo 3   &mo 5   &kp F17 &kp F18 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&trans      &kp F19 &kp F20 &kp F21 &kp F22 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
-&trans      &trans  &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
+&trans  &kp LA(SPC) &kp F16 &kp F17 &kp F18 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&kp F19 &trans      &kp F20 &kp F21 &kp F22 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
+&trans  &trans      &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
                             &trans  &trans  &trans                      &trans          &trans      &trans     
             >;
         };
@@ -71,8 +71,8 @@
             bindings = <
     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_CLR      &bootloader                 &kp SCROLLLOCK  &trans      &trans      &trans                                      
 &kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &sl LGUI    &sl RALT    &sl RSHFT   &sl RCTRL   &trans   
-&kt LCTRL   &kt LSHFT   &kt LGUI    &kt LALT    &kp F12     &trans                  &kp LGUI    &kp RALT    &kp RSHFT   &kp RCTRL   &trans      
-&kp F1      &kp F3      &kp F6      &kp F7      &kp F9      &kp F10                 &kp INS     &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
+&kp LCTRL   &kp LGUI    &kp LALT    &kp F12     &trans      &trans                  &kp LGUI    &kp RALT    &kp RSHFT   &kp RCTRL   &trans      
+&kp F1      &kp F3      &kp F6      &kp F7      &kp F10     &trans                  &kp INS     &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
                                     &trans      &trans      &trans                  &trans      &trans      &trans      
             >;
         };
@@ -102,10 +102,10 @@
         NUM1 {
             display-name = "Base numbers";
             bindings = <
-            &kp N1  &kp N2      &kp N3      &kp N4      &trans                      &kp N1      &kp N2      &kp N3          &kp N4       
-&kp N5  &kp N6      &kp N7      &kp N8      &kp BSPC    &trans                  &kp N5      &kp N6      &kp N7          &kp N8      &kp BSPC       
-&kp N9  &kp N0      &kp COMMA   &kp DOT     &kp ENTER   &trans                  &kp N9      &kp N0      &kp COMMA       &kp DOT     &kp ENTER 
-&kp TAB &kp PLUS    &kp MINUS   &kp SLASH   &kp EQUAL   &trans                  &kp PLUS    &kp MINUS   &kp SLASH       &kp EQUAL   &tog 8   
+            &kp N1  &kp N2      &kp N3      &kp N4      &trans                      &kp N8      &kp N9      &kp N0          &kp MINUS       
+&kp N5  &kp N6      &kp N7      &kp N8      &kp BSPC    &trans                  &kp N4      &kp N5      &kp N6          &kp N7      &kp BSPC       
+&kp N9  &kp N0      &kp COMMA   &kp DOT     &kp ENTER   &trans                  &kp N0      &kp N1      &kp N2          &kp N3      &kp ENTER 
+&kp TAB &kp PLUS    &kp MINUS   &kp SLASH   &kp EQUAL   &trans                  &kp PLUS    &kp LSHFT   &kp M       &kp COMMA   &kp DOT   
                                 &trans      &trans      &trans                  &trans      &trans      &trans 
             >;
         };
@@ -124,11 +124,11 @@
         FLIP {
             display-name = "Left";
             bindings = <
-        &kp N8  &kp N9  &kp N0  &kp MINUS   &trans                          &kp N1  &kp N2   &kp N3  &kp N4                             
-&kp U   &kp I   &kp O   &kp P   &kp Y               &trans              &kp Q   &kp W    &kp E   &kp R   &kp T   
-&kp J   &kp K   &kp L   &kp H   &kp SINGLE_QUOTE    &trans              &kp A   &kp S    &kp D   &kp F   &kp G     
-&kp TAB &kp B   &kp N   &kp M   &tog 10             &trans              &kp Z   &kp X    &kp C   &kp V   &trans
-                        &trans  &trans              &trans              &trans  &trans   &trans 
+        &kp N8      &kp N9  &kp N0  &kp MINUS   &trans                          &trans  &trans  &trans  &trans                             
+&kp U   &kp I       &kp O   &kp P   &kp Y               &trans              &trans  &trans  &trans  &trans  &trans   
+&kp J   &kp K       &kp L   &kp H   &kp SINGLE_QUOTE    &trans              &trans  &trans  &trans  &trans  &trans     
+&kp TAB &kp BSPC    &kp B   &kp N   &kp M               &trans              &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans              &trans              &trans  &trans  &trans 
             >;
         };
  
@@ -212,6 +212,9 @@
             release-after-ms = <5000>;   
             quick-release;             
         };
+        &sl {
+            release-after-ms = <4000>;
+        };
     };
 /*
 0 1 2 3 4               5 6 7 8
@@ -223,6 +226,21 @@
 
     combos {
         compatible = "zmk,combos";
+        combo_LCTRL {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_LALT {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&kp LALT>;
+        };
+        combo_LGUI {
+            timeout-ms = <50>;
+            key-positions = <34 35>;
+            bindings = <&kp LGUI>;
+        };
         combo_reset_left {
             timeout-ms = <50>;
             key-positions = <2 3 4>;
