@@ -40,18 +40,18 @@
 &sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
 &sk LALT    &kp LC(S)   &mo 5       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp MINUS       &kp HOME    &kp END     &kp PLUS   &trans  
-                                    &trans      &trans      &trans              &kp SPC         &sl 12      &trans  
+                                    &trans      &trans      &trans              &kp SPC         &sl 12      &sl 11  
             >;  
         };
 
         SYM1 {
             display-name = "Frequent Symbols";
             bindings = <
-            &kp F13 &kp F14 &kp F15 &kp F16 &trans                      &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&trans  &kp LA(SPC) &kp F17 &kp F18 &kp F19 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&trans  &trans      &kp F20 &kp F21 &kp F22 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
-&trans  &trans      &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
-                            &trans  &trans  &trans                      &trans          &trans      &trans     
+            &kp F13 &kp F14 &kp F15 &kp F16 &trans                          &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
+&trans      &kp LA(SPC) &kp F17 &kp F18 &kp F19 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&sk LCTRL   &trans      &kp F20 &kp F21 &kp F22 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
+&trans      &trans      &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
+                                &trans  &trans  &trans                      &trans          &trans      &trans     
             >;
         };
 
@@ -139,18 +139,18 @@
 &kp LPAR    &kp RPAR    &kp SEMICOLON   &kp BACKSLASH       &trans              &trans                  &trans  &trans  &trans  &trans  &trans       
 &kp HOME    &kp END     &kp DEL         &kp SLASH           &trans              &trans                  &trans  &trans  &trans  &trans  &trans            
 &kp LESS_THAN     &kp GREATER_THAN      &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &trans                  &trans  &trans  &trans  &trans  &trans       
-                                        &trans              &trans              &trans                  &trans  &trans   &trans
+                                        &trans              &trans              &trans                  &trans  &trans  &trans
             >;
         };
 
         APPS {
             display-name = "Quick access to apps";
             bindings = <
-        &kp LC(LS(LA(F1)))  &kp LC(LS(LA(F2)))  &kp LC(LS(LA(F3)))  &kp LC(LS(LA(F4)))   &kp LC(LS(LA(F5)))                            &kp LS(LA(LC(F1)))  &kp LS(LA(LC(F2)))   &kp LS(LA(LC(F3)))  &kp LS(LA(LC(F4)))                             
-&kp LC(LS(LA(F6)))  &kp LC(LS(LA(F7)))  &kp LC(LS(LA(F8)))  &kp LC(LS(LA(F9)))  &kp LC(LS(LA(F10))) &kp LC(LS(LA(F11)))             &kp LS(LA(LC(F5)))  &kp LS(LA(LC(F6)))  &kp LS(LA(LC(F7)))  &kp LS(LA(LC(F8)))  &kp LS(LA(LC(F9)))   
-&kp LC(LS(LA(F12))) &kp LC(LS(LA(F13))) &kp LC(LS(LA(F14))) &kp LC(LS(LA(F15))) &kp LC(LS(LA(F16))) &trans                          &kp LS(LA(LC(F10))) &kp LS(LA(LC(F11))) &kp LS(LA(LC(F12))) &kp LS(LA(LC(F13))) &kp LS(LA(LC(F14)))     
-&kp LGUI            &kp LC(LS(LA(F17))) &kp LC(LS(LA(F18))) &kp LC(LS(LA(F19))) &kp LC(LS(LA(F20))) &kp LC(LS(LA(F21)))             &kp LS(LA(LC(F15))) &kp LS(LA(LC(F16))) &kp LS(LA(LC(F17))) &kp LS(LA(LC(F18))) &kp LS(LA(LC(F19)))
-                                        &kp LC(LS(LA(F22))) &kp LC(LS(LA(F23))) &kp LC(LS(LA(F24)))                                 &kp LS(LA(LC(F20))) &kp LS(LA(LC(F21))) &kp LS(LA(LC(F22))) 
+        &kp LC(LS(LA(F1)))  &kp LC(LS(LA(F2)))  &kp LC(LS(LA(F3)))  &kp LC(LS(LA(F4)))   &trans                                     &kp LG(LS(LA(LC(F1))))  &kp LG(LS(LA(LC(F2))))  &kp LG(LS(LA(LC(F3))))  &kp LG(LS(LA(LC(F4))))                             
+&kp LC(LS(LA(F5)))  &kp LC(LS(LA(F6)))  &kp LC(LS(LA(F7)))  &kp LC(LS(LA(F8)))  &kp LC(LS(LA(F9)))  &kp LC(LS(LA(F10)))             &kp LG(LS(LA(LC(F5))))  &kp LG(LS(LA(LC(F6))))  &kp LG(LS(LA(LC(F7))))  &kp LG(LS(LA(LC(F8))))  &kp LG(LS(LA(LC(F9))))   
+&kp LC(LS(LA(F11))) &kp LC(LS(LA(F12))) &kp LC(LS(LA(F13))) &kp LC(LS(LA(F14))) &kp LC(LS(LA(F15))) &trans                          &kp LG(LS(LA(LC(F10)))) &kp LG(LS(LA(LC(F11)))) &kp LG(LS(LA(LC(F12)))) &kp LG(LS(LA(LC(F13)))) &kp LG(LS(LA(LC(F14))))
+&kp LC(LS(LA(F16))) &kp LC(LS(LA(F17))) &kp LC(LS(LA(F18))) &kp LC(LS(LA(F19))) &kp LC(LS(LA(F20))) &kp LC(LS(LA(F21)))             &kp LG(LS(LA(LC(F15)))) &kp LG(LS(LA(LC(F16)))) &kp LG(LS(LA(LC(F17)))) &kp LG(LS(LA(LC(F18)))) &kp LG(LS(LA(LC(F19))))
+                                        &kp LC(LS(LA(F22))) &kp LC(LS(LA(F23))) &kp LC(LS(LA(F24)))                                 &kp LG(LS(LA(LC(F20)))) &kp LG(LS(LA(LC(F21)))) &trans
             >;
         };
 
