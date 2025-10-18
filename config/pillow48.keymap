@@ -40,7 +40,7 @@
 &sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
 &sk LALT    &kp LC(S)   &mo 5       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp MINUS       &kp HOME    &kp END     &kp PLUS   &trans  
-                                    &trans      &trans      &trans              &kp SPC         &mo 12      &trans  
+                                    &trans      &trans      &trans              &kp SPC         &sl 12      &trans  
             >;  
         };
 
@@ -48,8 +48,8 @@
             display-name = "Frequent Symbols";
             bindings = <
             &kp F13 &kp F14 &kp F15 &kp F16 &trans                      &kp STAR        &kp LPAR    &kp RPAR        &kp UNDERSCORE     
-&trans  &kp LA(SPC) &kp F16 &kp F17 &kp F18 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
-&kp F19 &trans      &kp F20 &kp F21 &kp F22 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
+&trans  &kp LA(SPC) &kp F17 &kp F18 &kp F19 &trans                      &kp EQUAL       &kp PLUS    &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
+&trans  &trans      &kp F20 &kp F21 &kp F22 &trans                      &kp SLASH       &kp COMMA   &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
 &trans  &trans      &trans  &kp F23 &kp F24 &trans                      &kp LC(LS(TAB)) &kp PIPE    &kp BACKSLASH   &kp LC(TAB)         &trans
                             &trans  &trans  &trans                      &trans          &trans      &trans     
             >;
