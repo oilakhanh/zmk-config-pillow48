@@ -84,7 +84,7 @@
 &trans  &trans  &trans  &mo 6   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-250)   &mkp RCLK           &trans    
 &trans  &trans  &trans  &mo 6   &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-250)   &mmv MOVE_Y(250)    &mmv MOVE_X(250)    &trans
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &trans              &trans              &trans              &trans  
-                        &trans  &trans      &trans                      &trans      &trans      &trans     
+                        &trans  &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK     
             >;
         };
 
@@ -95,7 +95,7 @@
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-1000)  &mkp RCLK           &trans    
 &trans  &trans  &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &trans
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &trans              &trans              &trans              &trans
-                        &trans  &trans      &trans                      &trans      &trans      &trans     
+                        &trans  &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK
             >;
         };
 
