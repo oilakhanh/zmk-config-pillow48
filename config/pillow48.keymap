@@ -69,8 +69,8 @@
             bindings = <
     &trans  &trans  &trans    &trans        &trans                      &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
 &trans  &trans  &trans  &mo 5   &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
-&trans  &trans  &trans  &mo 5   &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &trans
-&trans  &trans  &trans  &trans  &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)       &kp LA(LEFT)    &kp LA(RIGHT)       &trans  
+&trans  &trans  &trans  &mo 5   &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LCTRL
+&trans  &trans  &trans  &trans  &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
                         &trans  &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK     
             >;
         };
@@ -80,8 +80,8 @@
             bindings = <
     &trans  &trans  &trans    &trans        &trans                      &msc MOVE_X(-50)    &msc MOVE_Y(150)   &msc MOVE_Y(-150)   &msc MOVE_X(50)     
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-1000)  &mkp RCLK           &trans    
-&trans  &trans  &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &trans
-&trans  &trans  &trans  &trans  &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)       &kp LA(LEFT)    &kp LA(RIGHT)       &trans 
+&trans  &trans  &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &kp LCTRL
+&trans  &trans  &trans  &trans  &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans 
                         &trans  &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK
             >;
         };
