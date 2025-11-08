@@ -156,7 +156,7 @@
         tdh_SPC: tap_dance_hold_SPC {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&mt LSHIFT SPC>, <&kp LGUI>;
         };
 
