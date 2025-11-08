@@ -157,7 +157,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&mt LSHIFT LGUI>, <&kp SPC>;
+            bindings = <&mt LSHIFT SPC>, <&kp SPC>;
         };
 
         mo_tog: mo_tog {
