@@ -27,7 +27,7 @@
 &kp Q   &kp W   &kp E   &kp R   &kp T   &kp RALT            &kp Y   &kp U    &kp I    &kp O     &kp P    
 &kp A   &kp S   &kp D   &kp F   &kp G   &sl 3               &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
 &kp TAB &kp Z   &kp X   &kp C   &kp V   &tog 7              &kp B   &kp N    &kp M    &kp LC(LS(LA(F12)))    &mo 1
-        &mo_tog 8 6     &mo 1   &ht_AltSpace LSHFT SPC      &mo 6   &kp SPC  &mo 3      
+        &mo_tog 6 8     &mo 1   &tdh_SPC                    &mo 6   &kp SPC  &mo 3      
             >;            
         };
 
@@ -151,6 +151,13 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        tdh_SPC: tap_dance_hold_SPC {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&mt LSHIFT LGUI>, <&kp SPC>;
         };
 
         mo_tog: mo_tog {
