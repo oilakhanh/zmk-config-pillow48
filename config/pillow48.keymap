@@ -27,29 +27,29 @@
 &kp Q   &kp W   &kp E   &kp R   &kp T   &none               &kp Y   &kp U    &kp I    &kp O     &kp P    
 &kp A   &kp S   &kp D   &kp F   &kp G   &none               &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
 &kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp LC(LS(LA(F12)))  &mo 1
-        &lt 6 SPC       &sl 1   &lt_rv LSHFT 8              &mo 6   &kp SPC  &mo 3      
+        &mo_tog 6 8     &mo 1   &ht LSHFT SPC               &mo 6   &kp SPC  &mo 3      
             >;            
         };
 
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-       &kp ESC      &kp LCTRL   &kp LALT   &kp LGUI   &trans                    &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
+       &kp ESC      &kp LCTRL   &kp LGUI   &kp LALT   &trans                    &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
 &sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
 &sk LALT    &sl 9       &mo 4       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp PLUS        &kp HOME    &kp END     &kp MINUS       &none  
-                                    &kp LGUI    &trans      &kp LALT            &kp SPC         &sl 10      &ht ENTER BSPC
+                                    &trans      &trans      &trans              &kp SPC         &mo 10      &ht ENTER BSPC
             >;  
         };
 
         XFUN {
             display-name = "Extra Functions";
             bindings = <
-            &kp F13 &kp F14 &kp F15 &kp F16 &trans                              &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
-&trans  &kp LA(SPC)         &kp F17 &kp F18 &kp F19 &trans                      &kp LG(LA(LS(F5)))      &kp LG(LA(LS(F6)))      &kp LG(LA(LS(F7)))      &kp LG(LA(LS(F8)))      &kp LG(LA(LS(F9)))
-&sl 3   &kp LC(LS(LA(F23))) &kp F20 &kp F21 &kp F22 &trans                      &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
-&trans  &trans              &trans  &kp F23 &kp F24 &trans                      &kp LG(LA(LS(F15)))     &kp LG(LA(LS(F16)))     &kp LG(LA(LS(F17)))     &kp LG(LA(LS(F18)))     &kp LG(LA(LS(F19)))
-                                    &trans  &trans  &trans                      &kp LG(LA(LS(F20)))     &kp LG(LA(LS(F21)))     &kp LG(LA(LS(F22)))        
+                    &kp F13             &kp F14 &kp F15 &kp F16 &trans          &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
+&trans              &kp LA(SPC)         &kp F17 &kp F18 &kp F19 &trans          &kp LG(LA(LS(F5)))      &kp LG(LA(LS(F6)))      &kp LG(LA(LS(F7)))      &kp LG(LA(LS(F8)))      &kp LG(LA(LS(F9)))
+&kp LC(LS(LA(F24))) &kp LC(LS(LA(F23))) &kp F20 &kp F21 &kp F22 &trans          &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
+&trans              &trans              &trans  &kp F23 &kp F24 &trans          &kp LG(LA(LS(F15)))     &kp LG(LA(LS(F16)))     &kp LG(LA(LS(F17)))     &kp LG(LA(LS(F18)))     &kp LG(LA(LS(F19)))
+                                                &trans  &trans  &trans          &kp LG(LA(LS(F20)))     &kp LG(LA(LS(F21)))     &kp LG(LA(LS(F22)))        
             >;
         };
 
@@ -67,10 +67,10 @@
         MOUSE1 { 
             display-name = "Slow Mouse";
             bindings = <
-    &trans  &trans  &trans    &trans        &trans                                  &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
-&trans      &trans      &trans  &sl 3       &kp UP      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
-&kp LALT    &kp LCTRL   &trans  &mo 5       &kp DOWN    &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
-&trans      &trans      &trans  &kp LEFT    &kp RIGHT   &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
+            &trans      &trans  &trans      &trans      &trans                                  &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
+&trans      &trans      &trans  &sl 3       &kp LEFT    &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
+&kp LALT    &kp LCTRL   &trans  &mo 5       &kp RIGHT   &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
+&kp LGUI    &trans      &trans  &kp UP      &kp DOWN    &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
                                 &trans      &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK     
             >;
         };
@@ -78,11 +78,11 @@
         MOUSE2 { 
             display-name = "Fast Mouse";
             bindings = <
-    &trans  &trans  &trans    &trans        &trans                          &msc MOVE_X(-50)    &msc MOVE_Y(150)   &msc MOVE_Y(-150)   &msc MOVE_X(50)     
-&trans      &trans      &trans  &trans  &trans  &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-1000)  &mkp RCLK           &trans    
-&kp LALT    &kp LCTRL   &trans  &trans  &trans  &trans                      &mkp LCLK   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &kp LSHFT
-&trans      &trans      &trans  &trans  &trans  &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans 
-                                &trans  &trans  &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK
+            &trans      &trans  &trans  &trans      &trans                          &msc MOVE_X(-50)    &msc MOVE_Y(150)   &msc MOVE_Y(-150)   &msc MOVE_X(50)     
+&trans      &trans      &trans  &trans  &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-1000)  &mkp RCLK           &trans    
+&kp LALT    &kp LCTRL   &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &kp LSHFT
+&trans      &trans      &trans  &trans  &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans 
+                                &trans  &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK
             >;
         };
 
@@ -90,9 +90,9 @@
             display-name = "Base numbers";
             bindings = <
                 &kp N1      &kp N2      &kp N3      &kp N4      &trans                  &kp N8      &kp N9      &kp N0      &kp BSPC       
-&ht ENTER BSPC  &kp N5      &kp N6      &kp N7      &kp N8      &trans                  &kp N6      &kp N7      &kp COMMA   &kp DOT     &kp ENTER       
-&kp EQUAL       &kp N9      &kp N0      &kp COMMA   &kp DOT     &trans                  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5
-&kp TAB         &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &trans                  &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &kp EQUAL   
+&ht ENTER BSPC  &kp N5      &kp N6      &kp N7      &kp N8      &trans                  &kp EQUAL   &kp COMMA   &kp DOT     &kp ENTER   &kp N7
+&kp EQUAL       &kp N9      &kp N0      &kp COMMA   &kp DOT     &trans                  &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &kp N6
+&kp TAB         &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &trans                  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5
                                         &trans      &trans      &trans                  &trans      &trans      &trans 
             >;
         };
@@ -152,7 +152,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
         lt_rv: layer_tap_reverse {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -161,14 +160,6 @@
             quick-tap-ms = <0>;
             bindings = <&kp>, <&sl>;
         };
-
-        td_BSPC: tap_dance_BSPC_ENTER {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp BSPC>, <&kp ENTER>;
-        };
-
         mo_tog: mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -177,16 +168,6 @@
             bindings = <&mo>, <&tog>;
             display-name = "Mo-Tog";
         };
-
-        kp_tog: kp_tog {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&kp>, <&tog>;
-            display-name = "Kp_Tog";
-        };
-
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -195,7 +176,6 @@
             bindings = <&mo>, <&kp>;
             display-name = "Layer-Tap";
         };
-
         sk: sticky_key {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY";
@@ -215,16 +195,26 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_NUM2_tog {
+        combo_LCTRL {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&tog 8>;
-        };  
-        combo_NUM2_sl {
+            bindings = <&kp LCTRL>;
+        };         
+        combo_LALT {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&sl 8>;
-        };
+            bindings = <&kp LCTRL>;
+        };                 
+        combo_NUM2_sl {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&sl 7>;
+        }; 
+        combo_NUM2_tog {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&tog 7>;
+        };  
         combo_reset_left {
             timeout-ms = <50>;
             key-positions = <2 3 4>;
