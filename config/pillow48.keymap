@@ -164,13 +164,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        lt_rv: layer_tap_reverse {
+        lt_rv: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            bindings = <&kp>, <&mo>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&sl>;
+            display-name = "Layer-Tap-Reverse";
         };
 
         td_BSPC: tap_dance_BSPC_ENTER {
