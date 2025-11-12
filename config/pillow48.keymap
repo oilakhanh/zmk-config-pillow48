@@ -68,9 +68,9 @@
             display-name = "Slow Mouse";
             bindings = <
     &trans  &trans  &trans    &trans        &trans                                  &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
-&trans      &trans      &trans  &kp LEFT    &kp UP      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
-&kp LALT    &kp LCTRL   &trans  &mo 5       &kp RIGHT   &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
-&trans      &trans      &trans  &kp DOWN    &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
+&trans      &trans      &trans  &sl 3       &kp UP      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
+&kp LALT    &kp LCTRL   &trans  &mo 5       &kp DOWN    &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
+&trans      &trans      &trans  &kp LEFT    &kp RIGHT   &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
                                 &trans      &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK     
             >;
         };
@@ -159,7 +159,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
-            bindings = <&kp>, <&mo>;
+            bindings = <&kp>, <&sl>;
         };
 
         td_BSPC: tap_dance_BSPC_ENTER {
