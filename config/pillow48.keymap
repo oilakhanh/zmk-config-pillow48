@@ -64,14 +64,14 @@
             >;
         };
 
-        MOUSE1 { 
+        MOUSE1 {
             display-name = "Slow Mouse";
             bindings = <
-            &trans      &trans  &trans      &trans      &trans                      &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
-&trans      &kp LC(LS(LA(F23)))    &trans  &sl 3       &kp F15     &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
-&kp LALT    &kp LCTRL   &trans  &mo 5       &kp F14     &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
-&kp LGUI    &kp F16     &trans  &kp F13     &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
-                                &trans      &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK     
+            &trans              &trans  &trans      &trans      &trans                      &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
+&trans      &kp LC(LS(LA(F23))) &trans  &sl 3       &kp F15     &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
+&kp LALT    &kp LCTRL           &trans  &mo 5       &kp F14     &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
+&kp LGUI    &kp F16             &trans  &kp F13     &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
+                                        &trans      &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK     
             >;
         };
 
@@ -203,7 +203,7 @@
         combo_LALT {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&kp LCTRL>;
+            bindings = <&kp LALT>;
         };                 
         combo_NUM2_sl {
             timeout-ms = <50>;
