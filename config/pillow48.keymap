@@ -28,7 +28,7 @@
 &kp Q   &kp W   &kp E   &kp R   &kp T   &none               &kp Y   &kp U    &kp I    &kp O     &kp P    
 &kp A   &kp S   &kp D   &kp F   &kp G   &none               &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
 &kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp LC(LS(LA(F12)))  &mo 1
-        &mo_tog 6 8     &mo 1   &ht LSHFT SPC               &mo 6   &kp SPC  &mo 3      
+        &lt 6 SPC       &sl 1   &lt_rv LSHFT 8              &mo 6   &kp SPC  &mo 3      
             >;            
         };
 
@@ -162,6 +162,15 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        lt_rv: layer_tap_reverse {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            bindings = <&kp>, <&mo>;
         };
 
         td_BSPC: tap_dance_BSPC_ENTER {
