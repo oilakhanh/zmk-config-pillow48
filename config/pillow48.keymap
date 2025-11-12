@@ -23,11 +23,11 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &none                       &kp N8   &kp N9   &kp N0   &kp MINUS     
+&kp N1  &kp N2  &kp N3  &kp N4  &none                       &kp N8   &kp N9   &kp N0   &kp MINUS
 &kp Q   &kp W   &kp E   &kp R   &kp T   &none               &kp Y   &kp U    &kp I    &kp O     &kp P    
 &kp A   &kp S   &kp D   &kp F   &kp G   &none               &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
 &kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp LC(LS(LA(F12)))  &mo 1
-        &mo_tog 6 8     &mo 1   &ht LSHFT SPC               &mo 6   &kp SPC  &mo 3      
+        &mo_tog 6 8     &mo 1   &ht LSHFT SPC               &mo 6   &kp SPC  &mo 3
             >;            
         };
 
@@ -37,19 +37,19 @@
        &kp ESC      &kp LCTRL   &kp LGUI   &kp LALT   &trans                    &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
 &sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
 &sk LALT    &sl 9       &mo 4       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
-&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp PLUS        &kp HOME    &kp END     &kp MINUS       &none  
-                                    &trans      &trans      &trans              &kp SPC         &mo 10      &ht ENTER BSPC
+&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp PLUS        &kp HOME    &kp END     &kp MINUS       &trans  
+                                    &trans      &trans      &trans              &kp SPC         &mo 10      &trans
             >;  
         };
 
         XFUN {
             display-name = "Extra Functions";
             bindings = <
-                    &kp F13             &kp F14 &kp F15 &kp F16 &trans          &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
+        &kp LEFT    &kp RIGHT           &kp UP      &kp DOWN    &trans          &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
 &trans              &kp LA(SPC)         &kp F17 &kp F18 &kp F19 &trans          &kp LG(LA(LS(F5)))      &kp LG(LA(LS(F6)))      &kp LG(LA(LS(F7)))      &kp LG(LA(LS(F8)))      &kp LG(LA(LS(F9)))
-&kp LC(LS(LA(F24))) &kp LC(LS(LA(F23))) &kp F20 &kp F21 &kp F22 &trans          &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
+&kp LC(LS(LA(F24))) &kp LG(LA(LS(F22))) &kp F20 &kp F21 &kp F22 &trans          &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
 &trans              &trans              &trans  &kp F23 &kp F24 &trans          &kp LG(LA(LS(F15)))     &kp LG(LA(LS(F16)))     &kp LG(LA(LS(F17)))     &kp LG(LA(LS(F18)))     &kp LG(LA(LS(F19)))
-                                                &trans  &trans  &trans          &kp LG(LA(LS(F20)))     &kp LG(LA(LS(F21)))     &kp LG(LA(LS(F22)))        
+                                        &trans  &trans  &trans                  &kp LG(LA(LS(F20)))     &kp LG(LA(LS(F21)))     &kp LG(LA(LS(F22)))        
             >;
         };
 
@@ -67,10 +67,10 @@
         MOUSE1 { 
             display-name = "Slow Mouse";
             bindings = <
-            &trans      &trans  &trans      &trans      &trans                                  &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
-&trans      &trans      &trans  &sl 3       &kp LEFT    &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
-&kp LALT    &kp LCTRL   &trans  &mo 5       &kp RIGHT   &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
-&kp LGUI    &trans      &trans  &kp UP      &kp DOWN    &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
+            &trans      &trans  &trans      &trans      &trans                      &msc MOVE_X(-20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)     
+&trans      &LC(LS(LA(F23)))    &trans  &sl 3       &kp F15     &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
+&kp LALT    &kp LCTRL   &trans  &mo 5       &kp F14     &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
+&kp LGUI    &kp F16     &trans  &kp F13     &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
                                 &trans      &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK     
             >;
         };
@@ -100,7 +100,7 @@
         NUM2 {
             display-name = "Numpad numbers";
             bindings = <
-            &kp KP_N1   &kp KP_N2       &kp KP_N3       &kp KP_N4           &trans                      &kp KP_N1   &kp KP_N2       &kp KP_N3           &kp KP_N4       
+                &kp KP_N1   &kp KP_N2       &kp KP_N3       &kp KP_N4       &trans                      &kp KP_N1   &kp KP_N2       &kp KP_N3           &kp KP_N4       
 &ht ENTER BSPC  &kp KP_N5   &kp KP_N6       &kp KP_N7       &kp KP_N8       &trans                      &kp KP_N5   &kp KP_N6       &kp KP_N7           &kp KP_N8       &kp BSPC       
 &kp KP_EQUAL    &kp KP_N9   &kp KP_N0       &kp KP_COMMA    &kp KP_DOT      &trans                      &kp KP_N9   &kp KP_N0       &kp KP_COMMA        &kp KP_DOT      &kp ENTER 
 &kp TAB         &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY &kp KP_DIVIDE   &trans                      &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY     &kp KP_DIVIDE   &kp KP_EQUAL   
@@ -212,7 +212,7 @@
         }; 
         combo_NUM2_tog {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <34 35>;
             bindings = <&tog 7>;
         };  
         combo_reset_left {
@@ -220,11 +220,6 @@
             key-positions = <2 3 4>;
             bindings = <&bootloader>;
         };               
-        combo_reset_right {
-            timeout-ms = <50>;
-            key-positions = <5 6 7>;
-            bindings = <&bootloader>;
-        };
         combo_to_BASE {
             timeout-ms = <50>;
             key-positions = <42 43 44>;
