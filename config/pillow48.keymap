@@ -90,9 +90,9 @@
             display-name = "Base numbers";
             bindings = <
                 &kp N1      &kp N2      &kp N3      &kp N4      &trans                  &kp N8      &kp N9      &kp N0      &kp BSPC       
-&ht ENTER BSPC  &kp N5      &kp N6      &kp N7      &kp N8      &trans                  &kp EQUAL   &kp COMMA   &kp DOT     &kp ENTER   &kp N7
-&kp EQUAL       &kp N9      &kp N0      &kp COMMA   &kp DOT     &trans                  &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &kp N6
-&kp TAB         &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &trans                  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5
+&ht ENTER BSPC  &kp N5      &kp N6      &kp N7      &kp N8      &trans                  &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &kp EQUAL
+&kp EQUAL       &kp N9      &kp N0      &kp COMMA   &kp DOT     &trans                  &kp N4      &kp N5      &kp N6      &kp N7      &kp ENTER
+&kp TAB         &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &trans                  &kp N1      &kp N2      &kp N3      &kp COMMA   &kp DOT
                                         &trans      &trans      &trans                  &trans      &trans      &trans 
             >;
         };
