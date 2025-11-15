@@ -23,4 +23,5 @@ include:
     shield: pillow48_left
   - board: nice_nano_v2
     shield: pillow48_right
-
+  - board: nice_nano_v2
+    shield: pillow48_dongle

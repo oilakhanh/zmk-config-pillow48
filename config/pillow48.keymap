@@ -38,7 +38,7 @@
 &sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
 &sk LALT    &sl 9       &mo 4       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp PLUS        &kp HOME    &kp END     &kp MINUS       &trans  
-                                    &trans      &trans      &trans              &kp SPC         &mo 10      &trans
+                                    &trans      &trans      &trans              &kp SPC         &mo 10      &mo 8
             >;  
         };
 
@@ -56,11 +56,11 @@
         FUNC {
             display-name = "FN keys and TKL cluster";
             bindings = <
-        &trans  &trans  &trans    &trans        &trans                                  &kp SCROLLLOCK  &trans      &trans      &trans                                      
-&kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &trans      &kp INS     &kp BSPC    &kp DEL     &trans   
-&kp LCTRL   &kp LSHFT   &kp LALT    &kp F9      &kp F12     &trans                  &kp LGUI    &kp RALT    &kp RSHFT   &kp RCTRL   &kp ENTER     
-&kp F1      &kp F3      &kp F6      &kp F7      &kp F10     &trans                  &trans      &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
-                                    &trans      &trans      &trans                  &trans      &trans      &trans      
+        &trans  &trans  &trans    &trans        &trans                              &trans          &trans      &sk RSHFT   &sk RCTRL                                      
+&kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &kp SCROLLLOCK  &kp INS     &kp BSPC    &kp DEL     &trans   
+&kp LCTRL   &kp LSHFT   &kp LALT    &kp F9      &kp F12     &trans                  &kp LGUI        &kp RALT    &kp RSHFT   &kp RCTRL   &kp ENTER     
+&kp F1      &kp F3      &kp F6      &kp F7      &kp F10     &trans                  &trans          &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
+                                    &trans      &trans      &trans                  &trans          &trans      &trans      
             >;
         };
 
@@ -163,8 +163,8 @@
         mo_tog: mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <100>;
             bindings = <&mo>, <&tog>;
             display-name = "Mo-Tog";
         };
