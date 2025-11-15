@@ -1,22 +1,19 @@
-if SHIELD_PILLOW48_DONGLE
+
+
+if SHIELD_PILLOW48_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "pillow48 Dongle"
+    default "pillow48"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-    default y
-
-config ZMK_USB
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_PILLOW48_LEFT || SHIELD_PILLOW48_RIGHT || SHIELD_PILLOW48_DONGLE
+
+if SHIELD_PILLOW48_LEFT || SHIELD_PILLOW48_RIGHT
 
 config ZMK_SPLIT
-    default y
-
-config ZMK_BLE
     default y
 
 endif

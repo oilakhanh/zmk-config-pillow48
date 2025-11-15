@@ -3,6 +3,3 @@ config SHIELD_PILLOW48_LEFT
 
 config SHIELD_PILLOW48_RIGHT
     def_bool $(shields_list_contains,pillow48_right)
-
-config SHIELD_PILLOW48_DONGLE
-    def_bool $(shields_list_contains,pillow48_dongle)
