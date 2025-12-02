@@ -34,7 +34,7 @@
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-       &kp ESC      &kp LEFT   &kp RIGHT   &kp DOWN   &trans                    &kp LC(TAB)     &kp BSPC    &kp DEL     &kp LC(LS(LA(F12)))
+       &kp ESC      &kp LEFT   &kp LGUI     &kp RIGHT       &trans                    &kp LC(TAB)     &kp BSPC    &kp DEL     &kp LC(LS(LA(F12)))
 &sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
 &sk LALT    &sl 9       &mo 4       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp PLUS        &kp HOME    &kp END     &kp MINUS       &trans  
@@ -45,7 +45,7 @@
         XFUN {
             display-name = "Extra Functions";
             bindings = <
-        &kp LC(F13) &kp UP                  &kp LC(F14)         &kp LC(F15)         &trans                          &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
+        &kp LC(LA(LS(F13))) &kp LC(LA(LS(F14)))         &kp LC(LA(LS(F15)))         &trans                          &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
 &kp LG(LA(LC(F5)))  &kp LA(SPC)             &kp F17             &kp F18             &kp F19 &trans                  &kp LG(LA(LS(F5)))      &kp LG(LA(LS(F6)))      &kp LG(LA(LS(F7)))      &kp LG(LA(LS(F8)))      &kp LG(LA(LS(F9)))
 &kp LG(LA(LS(F24))) &kp LG(LA(LS(F22)))     &kp F20             &kp F21             &kp F22 &trans                  &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
 &kp LG(LA(LC(F1)))  &kp LG(LA(LC(F2)))      &kp LG(LA(LC(F3)))  &kp F23             &kp F24 &trans                  &kp LG(LA(LS(F15)))     &kp LG(LA(LS(F16)))     &kp LG(LA(LS(F17)))     &kp LG(LA(LS(F18)))     &kp LG(LA(LS(F19)))
@@ -56,11 +56,11 @@
         FUNC {
             display-name = "FN keys and TKL cluster";
             bindings = <
-        &kp LC(F16)   &kp LC(F17)   &kp LC(F18) &kp LC(F19) &trans                  &trans                  &kp KP_NUMLOCK  &sk RSHFT           &sk RCTRL
+        &kp LC(LA(LS(F16)))   &kp LC(LA(LS(F17)))   &kp LC(LA(LS(F18))) &kp LC(LA(LS(F19))) &trans                  &trans                  &kp KP_NUMLOCK  &sk RSHFT           &sk RCTRL
 &kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &kp LG(LA(LC(F10)))     &kp INS         &kp LG(LA(LC(F18))) &kp LG(LA(LC(F19))) &kp LG(LA(LC(F20)))
 &kp LCTRL   &kp LSHFT   &kp LALT    &kp F9      &kp F12     &trans                  &kp LG(LA(LC(F21)))     &kp RALT        &kp RSHFT           &kp RCTRL           &kp LG(LA(LC(F22)))
 &kp F1      &kp F3      &kp F6      &kp F7      &kp F10     &trans                  &kp LG(LA(LC(F11)))     &kp PG_UP       &kp PG_DN           &kp PSCRN           &kp SCROLLLOCK
-                                    &kp LC(F20) &kp LC(F21) &kp LC(F22)             &kp LC(F23)             &kp LC(F24)     &trans
+                                    &kp LC(LA(LS(F20))) &kp LC(LA(LS(F21))) &kp LC(LA(LS(F22)))             &kp LC(LA(LS(F23)))             &kp LC(LA(LS(F24)))     &trans
             >;
         };
 
@@ -205,10 +205,15 @@
             key-positions = <31 32>;
             bindings = <&kp LALT>;
         };     
-        combo_LGUI {
+        combo_UP {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp UP>;
+        };  
+        combo_DOWN {
             timeout-ms = <50>;
             key-positions = <23 24>;
-            bindings = <&kp LGUI>;
+            bindings = <&kp DOWN>;
         };  
         combo_NUM2_sl {
             timeout-ms = <50>;
