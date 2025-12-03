@@ -42,14 +42,15 @@
             >;  
         };
 //&kp LG(LA(LC(F5)))
+//&kp kp LG(LA(LC(F7)))
         XFUN {
             display-name = "Extra Functions";
             bindings = <
-        &kp LC(LA(LS(F13))) &kp LC(LA(LS(F14)))         &kp LC(LA(LS(F15)))         &trans                          &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
-&trans              &kp LA(SPC)             &kp F17             &kp F18             &kp F19 &trans                  &kp LG(LA(LS(F5)))      &kp LG(LA(LS(F6)))      &kp LG(LA(LS(F7)))      &kp LG(LA(LS(F8)))      &kp LG(LA(LS(F9)))
-&kp LG(LA(LS(F24))) &kp LG(LA(LS(F22)))     &kp F20             &kp F21             &kp F22 &trans                  &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
-&kp LG(LA(LC(F1)))  &kp LG(LA(LC(F2)))      &kp LG(LA(LC(F3)))  &kp F23             &kp F24 &trans                  &kp LG(LA(LS(F15)))     &kp LG(LA(LS(F16)))     &kp LG(LA(LS(F17)))     &kp LG(LA(LS(F18)))     &kp LG(LA(LS(F19)))
-                                            &kp LG(LA(LC(F6)))  &trans              &kp LG(LA(LC(F8)))              &kp LG(LA(LS(F20)))     &kp LG(LA(LS(F21)))     &kp LG(LA(LS(F22)))        
+        &kp LC(LA(LS(F13))) &kp LC(LA(LS(F14)))         &kp LC(LA(LS(F15)))     &trans                          &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
+&trans              &kp LA(SPC)             &kp F17             &kp F18         &kp F19 &trans                  &kp LG(LA(LS(F5)))      &kp LG(LA(LS(F6)))      &kp LG(LA(LS(F7)))      &kp LG(LA(LS(F8)))      &kp LG(LA(LS(F9)))
+&kp LG(LA(LS(F24))) &kp LG(LA(LS(F22)))     &kp F20             &kp F21         &kp F22 &trans                  &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
+&kp LG(LA(LC(F1)))  &kp LG(LA(LC(F2)))      &kp LG(LA(LC(F3)))  &kp F23         &kp F24 &trans                  &kp LG(LA(LS(F15)))     &kp LG(LA(LS(F16)))     &kp LG(LA(LS(F17)))     &kp LG(LA(LS(F18)))     &kp LG(LA(LS(F19)))
+                                            &kp LG(LA(LC(F6)))  &trans          &kp LG(LA(LC(F8)))              &kp LG(LA(LS(F20)))     &kp LG(LA(LS(F21)))     &kp LG(LA(LS(F22)))        
             >;
         };
 
