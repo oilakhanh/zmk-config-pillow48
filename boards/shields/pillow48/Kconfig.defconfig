@@ -1,10 +1,17 @@
 if SHIELD_PILLOW48_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "pillow48"
+    default "pillow48_left"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+endif
+
+if SHIELD_PILLOW48_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "pillow48_right"
 
 endif
 
