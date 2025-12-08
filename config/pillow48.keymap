@@ -56,7 +56,7 @@
         FUNC {
             display-name = "FN keys and TKL cluster";
             bindings = <
-        &trans  &trans  &bt BT_SEL 0    &bt BT_CLR        &trans                              &trans          &trans      &sk RSHFT   &sk RCTRL                                      
+    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_CLR  &trans                              &trans          &trans      &sk RSHFT   &sk RCTRL                                      
 &kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &kp SCROLLLOCK  &kp INS     &kp BSPC    &kp DEL     &trans   
 &kp LCTRL   &kp LSHFT   &kp LALT    &kp F9      &kp F12     &trans                  &kp LGUI        &kp RALT    &kp RSHFT   &kp RCTRL   &kp ENTER     
 &kp F1      &kp F3      &kp F6      &kp F7      &kp F10     &trans                  &trans          &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
@@ -229,7 +229,12 @@
             timeout-ms = <50>;
             key-positions = <2 3 4>;
             bindings = <&bootloader>;
-        };               
+        };      
+        combo_reset_right {
+            timeout-ms = <50>;
+            key-positions = <5 6 7>;
+            bindings = <&bootloader>;
+        }; 
         combo_to_BASE {
             timeout-ms = <50>;
             key-positions = <42 43 44>;
