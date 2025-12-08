@@ -1,6 +1,18 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "pillow48.dtsi"
 
+&usbd {
+    status = "okay";
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+/ {
+    chosen {
+        zephyr,console = &cdc_acm_uart;
+    };
+};
+
 &default_transform {
     col-offset = <6>;  
 };
