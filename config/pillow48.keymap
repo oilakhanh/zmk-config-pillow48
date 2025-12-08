@@ -219,13 +219,13 @@
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp UP>;
-            layer = <1>;
+            layers = <1>;
         }; 
         combo_DOWN {
             timeout-ms = <50>;
             key-positions = <23 24>;
             bindings = <&kp DOWN>;
-            layer = <1>;
+            layers = <1>;
         }; 
         combo_NUM2_sl {
             timeout-ms = <50>;
