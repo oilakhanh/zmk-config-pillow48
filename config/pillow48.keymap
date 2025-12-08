@@ -204,16 +204,28 @@
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&kp LALT>;
-        }; 
+        };
+        combo_LEFT {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LEFT>;
+        };
+        combo_RIGHT {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp LEFT>;
+        };
         combo_UP {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp UP>;
+            layer = <1>;
         }; 
         combo_DOWN {
             timeout-ms = <50>;
             key-positions = <23 24>;
             bindings = <&kp DOWN>;
+            layer = <1>;
         }; 
         combo_NUM2_sl {
             timeout-ms = <50>;
