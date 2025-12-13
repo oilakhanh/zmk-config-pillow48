@@ -8,13 +8,12 @@
 #define MODS 1   
 #define XFUN 2
 #define FUNC 3
-#define MOUSE1 4
-#define MOUSE2 5
-#define NUM1 6
-#define NUM2 7
-#define FLIP 8
-#define APPS 9
-#define SYMB 10
+#define MOUSE 4
+#define NUM1 5
+#define NUM2 6
+#define FLIP 7
+#define APPS 8
+#define SYMB 9
 
 / {
     keymap {
@@ -23,66 +22,55 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &none                       &kp N8   &kp N9   &kp N0   &kp MINUS
-&kp Q   &kp W   &kp E   &kp R   &kp T   &none               &kp Y   &kp U    &kp I    &kp O     &kp P    
-&kp A   &kp S   &kp D   &kp F   &kp G   &none               &kp H   &kp J    &kp K    &kp L     &kp SINGLE_QUOTE
-&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp LC(LS(LA(F12)))  &mo 1
-        &mo_sl 6 8      &mo 1   &ht LSHFT SPC               &mo 6   &kp SPC  &mo 3
+&kp N1  &kp N2  &kp N3  &kp N4  &none                       &kp N8  &kp N9   &kp N0   &kp MINUS
+&kp Q   &kp W   &kp E   &kp R   &kp T   &none               &kp Y   &kp U    &kp I    &kp O                 &kp P    
+&kp A   &kp S   &kp D   &kp F   &kp G   &none               &kp H   &kp J    &kp K    &kp L                 &kp SINGLE_QUOTE
+&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp LC(LS(LA(F12)))   &mo 1
+        &mo_sl 5 7      &mo 1   &ht LSHFT SPC               &mo 5   &kp SPC  &mo 3
             >;            
         };
 
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-       &kp ESC      &kp LEFT   &kp LGUI   &kp RIGHT   &trans                    &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
-&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans              &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
-&sk LALT    &sl 9       &mo 4       &sk LGUI    &kp ENTER   &trans              &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
-&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans              &kp PLUS        &kp HOME    &kp END     &kp MINUS       &trans  
-                                    &trans      &trans      &trans              &kp SPC         &mo 10      &sl 8
+            &kp ESC     &kp UP      &kp LGUI    &kp DOWN    &trans          &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
+&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK       &kp LA(RIGHT)    
+&sk LALT    &sl 8       &mo 4       &sk LGUI    &kp ENTER   &trans          &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS        &kp HOME    &kp END     &kp MINUS       &trans  
+                                    &trans      &trans      &trans          &kp SPC         &mo 9       &sl 7
             >;  
         };
 
         XFUN {
             display-name = "Extra Functions";
             bindings = <
-        &kp LA(LC(F1))    &kp LA(LC(F2))    &kp LA(LC(F3))  &kp LA(LC(F4))      &trans                          &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
-&kp LG(LA(LC(F5)))  &kp LA(SPC)         &kp F17             &kp F18             &kp F19 &trans                  &kp LG(LA(LS(F5)))      &kp LG(LA(LS(F6)))      &kp LG(LA(LS(F7)))      &kp LG(LA(LS(F8)))      &kp LG(LA(LS(F9)))
-&kp LG(LA(LS(F24))) &kp LG(LA(LS(F22))) &kp F20             &kp F21             &kp F22 &trans                  &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
-&kp LG(LA(LC(F1)))  &kp LG(LA(LC(F2)))  &kp LG(LA(LC(F3)))  &kp F23             &kp F24 &trans                  &kp LG(LA(LS(F15)))     &kp LG(LA(LS(F16)))     &kp LG(LA(LS(F17)))     &kp LG(LA(LS(F18)))     &kp LG(LA(LS(F19)))
-                                        &kp LG(LA(LC(F6)))  &kp LG(LA(LC(F7)))  &kp LG(LA(LC(F8)))              &kp LG(LA(LS(F20)))     &kp LG(LA(LS(F21)))     &kp LG(LA(LS(F22)))        
+                    &kp LA(LC(F1))      &kp LA(LC(F2))      &kp LA(LC(F3))      &kp LA(LC(F4))      &trans                  &kp LG(LA(LS(F1)))      &kp LG(LA(LS(F2)))      &kp LG(LA(LS(F3)))      &kp LG(LA(LS(F4)))     
+&kp LG(LA(LC(F5)))  &kp LA(SPC)         &kp F17             &kp F18             &kp F19             &trans                  &kp LG(LA(LS(F5)))      &kp LG(LA(LS(F6)))      &kp LG(LA(LS(F7)))      &kp LG(LA(LS(F8)))      &kp LG(LA(LS(F9)))
+&kp LG(LA(LS(F24))) &kp LG(LA(LS(F22))) &kp F20             &kp F21             &kp F22             &trans                  &kp LG(LA(LS(F10)))     &kp LG(LA(LS(F11)))     &kp LG(LA(LS(F12)))     &kp LG(LA(LS(F13)))     &kp LG(LA(LS(F14)))
+&kp LA(F4)          &kp LG(LA(LC(F2)))  &kp LG(LA(LC(F3)))  &kp F23             &kp F24             &trans                  &kp LG(LA(LS(F15)))     &kp LG(LA(LS(F16)))     &kp LG(LA(LS(F17)))     &kp LG(LA(LS(F18)))     &kp LG(LA(LS(F19)))
+                                                            &kp LG(LA(LC(F6)))  &kp LG(LA(LC(F7)))  &kp LG(LA(LC(F8)))      &kp LG(LA(LS(F20)))     &kp LG(LA(LS(F21)))     &kp LG(LA(LS(F22)))        
             >;
         };
 
         FUNC {
             display-name = "FN keys and TKL cluster";
             bindings = <
-    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_CLR  &trans                              &trans          &trans      &sk RSHFT   &sk RCTRL                                      
+    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_CLR  &trans                  &trans          &trans      &sk RSHFT   &sk RCTRL                                      
 &kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &kp SCROLLLOCK  &kp INS     &kp BSPC    &kp DEL     &trans   
-&kp LCTRL   &kp LSHFT   &kp LALT    &kp F9      &kp F12     &trans                  &kp LGUI        &kp RALT    &kp RSHFT   &kp RCTRL   &kp ENTER     
+&kp LCTRL   &kp LSHFT   &kp LALT    &kp F9      &kp F12     &trans                  &LG(LA(LC(F1))) &kp RALT    &kp RSHFT   &kp RCTRL   &kp ENTER     
 &kp F1      &kp F3      &kp F6      &kp F7      &kp F10     &trans                  &trans          &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
-                                    &trans      &trans      &trans                  &trans          &trans      &trans      
+                    &kp LA(LC(F9))  &kp LA(LC(F10)) &kp LA(LC(F11))                 &trans          &trans      &trans      
             >;
         };
 
-        MOUSE1 {
-            display-name = "Slow Mouse";
+        MOUSE {
+            display-name = "Mouse";
             bindings = <
-            &trans              &trans  &trans      &trans      &trans                      &msc MOVE_X(20)    &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(-20)     
-&trans      &kp LC(LS(LA(F23))) &trans  &sl 3       &kp F15     &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-500)   &mkp RCLK           &trans    
-&kp LALT    &kp LCTRL           &trans  &mo 5       &kp F14     &trans                      &mkp LCLK   &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp LSHFT
-&kp LGUI    &kp F16             &trans  &kp F13     &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans  
-                                        &trans      &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK     
-            >;
-        };
-
-        MOUSE2 { 
-            display-name = "Fast Mouse";
-            bindings = <
-            &trans      &trans  &trans  &trans      &trans                          &msc MOVE_X(50)    &msc MOVE_Y(150)   &msc MOVE_Y(-150)   &msc MOVE_X(-50)     
-&trans      &trans      &trans  &trans  &trans      &trans                      &trans      &mkp MCLK           &mmv MOVE_Y(-1000)  &mkp RCLK           &trans    
-&kp LALT    &kp LCTRL   &trans  &trans  &trans      &trans                      &mkp LCLK   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &kp LSHFT
-&trans      &trans      &trans  &trans  &trans      &trans                      &kp LC(PG_UP)   &kp LC(PG_DN)   &kp LA(LEFT)        &kp LA(RIGHT)       &trans 
-                                &trans  &trans      &trans                      &mkp MCLK   &mkp LCLK           &mkp RCLK
+            &trans              &trans  &trans          &trans          &trans                  &msc MOVE_X(20)     &msc MOVE_Y(20)     &msc MOVE_Y(-20)    &msc MOVE_X(-20)    
+&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &msc MOVE_Y(150)    &mmv MOVE_Y(-1000)  &mmv MOVE_Y(-500)   &mmv MOVE_Y(1000)   &msc MOVE_Y(-150) 
+&kp LALT    &kp LCTRL           &trans  &sl 3           &kp F14         &trans                  &mmv MOVE_X(-1000)  &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &mmv MOVE_X(1000)
+&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &kp LA(LC(F12))     &msc MOVE_X(50)     &msc MOVE_X(-50)    &kp LA(LC(F13))     &kp LA(LC(F14))  
+                                        &kp LA(LC(F5))  &kp LA(LC(F15)) &kp LA(LC(F6))          &mkp MCLK           &mkp LCLK           &mkp RCLK     
             >;
         };
 
@@ -93,25 +81,25 @@
 &ht ENTER BSPC  &kp N5      &kp N6      &kp N7      &kp N8      &trans                  &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &kp EQUAL
 &kp EQUAL       &kp N9      &kp N0      &kp COMMA   &kp DOT     &trans                  &kp N4      &kp N5      &kp N6      &kp N7      &kp ENTER
 &kp TAB         &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &trans                  &kp N1      &kp N2      &kp N3      &kp COMMA   &kp DOT
-                                        &trans      &trans      &trans                  &trans      &trans      &trans 
+                                        &trans      &kp SPC     &trans                  &trans      &trans      &trans 
             >;
         };
 
         NUM2 {
             display-name = "Numpad numbers";
             bindings = <
-                &kp KP_N1   &kp KP_N2       &kp KP_N3       &kp KP_N4       &trans                      &kp KP_N1   &kp KP_N2       &kp KP_N3           &kp KP_N4       
-&ht ENTER BSPC  &kp KP_N5   &kp KP_N6       &kp KP_N7       &kp KP_N8       &trans                      &kp KP_N5   &kp KP_N6       &kp KP_N7           &kp KP_N8       &kp BSPC       
-&kp KP_EQUAL    &kp KP_N9   &kp KP_N0       &kp KP_COMMA    &kp KP_DOT      &trans                      &kp KP_N9   &kp KP_N0       &kp KP_COMMA        &kp KP_DOT      &kp ENTER 
-&kp TAB         &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY &kp KP_DIVIDE   &trans                      &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY     &kp KP_DIVIDE   &kp KP_EQUAL   
-                                            &trans          &trans          &trans                      &trans      &trans      &trans 
+                    &kp KP_N1   &kp KP_N2       &kp KP_N3       &kp KP_N4       &trans          &kp KP_N1   &kp KP_N2       &kp KP_N3           &kp KP_N4       
+&ht KP_ENTER BSPC   &kp KP_N5   &kp KP_N6       &kp KP_N7       &kp KP_N8       &trans          &kp KP_N5   &kp KP_N6       &kp KP_N7           &kp KP_N8       &kp BSPC       
+&kp KP_EQUAL        &kp KP_N9   &kp KP_N0       &kp KP_COMMA    &kp KP_DOT      &trans          &kp KP_N9   &kp KP_N0       &kp KP_COMMA        &kp KP_DOT      &kp ENTER 
+&kp TAB             &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY &kp KP_DIVIDE   &trans          &kp KP_PLUS &kp KP_MINUS    &kp KP_MULTIPLY     &kp KP_DIVIDE   &kp KP_EQUAL   
+                                                &trans          &trans          &trans          &trans      &trans          &trans 
             >;
         };
 
         FLIP {
             display-name = "Left";
             bindings = <
-        &kp N8  &kp N9  &kp N0  &kp MINUS   &trans                      &trans  &trans  &kp TAB &trans                             
+        &kp N8  &kp N9  &kp N0  &kp MINUS           &trans              &trans  &trans  &kp TAB &trans                             
 &kp U   &kp I   &kp O   &kp P   &kp Y               &trans              &kp Q   &kp W   &kp E   &kp R   &kp T   
 &kp J   &kp K   &kp L   &kp H   &kp SINGLE_QUOTE    &trans              &kp A   &kp S   &kp D   &kp F   &kp G     
 &kp TAB &kp B   &kp N   &kp M   &kp BSPC            &trans              &kp Z   &kp X   &kp C   &kp V   &trans
@@ -205,26 +193,50 @@
             key-positions = <31 32>;
             bindings = <&kp LALT>;
         };
-        combo_UP {
+
+        combo_UP_right_half {
             timeout-ms = <50>;
-            key-positions = <12 13>;
+            key-positions = <37 38>;
             bindings = <&kp UP>;
         }; 
-        combo_DOWN {
+        combo_DOWN_right_half {
             timeout-ms = <50>;
-            key-positions = <23 24>;
+            key-positions = <38 39>;
             bindings = <&kp DOWN>;
         }; 
+        combo_RIGHT_right_half {
+            timeout-ms = <50>;
+            key-positions = <39 40>;
+            bindings = <&kp RIGHT>;
+        }; 
+        combo_LEFT_right_half {
+            timeout-ms = <50>;
+            key-positions = <40 41>;
+            bindings = <&kp LEFT>;
+        }; 
+
+        combo_RIGHT {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp RIGHT>;
+        }; 
+        combo_LEFT {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp LEFT>;
+        }; 
+
         combo_NUM2_sl {
             timeout-ms = <50>;
             key-positions = <33 34>;
-            bindings = <&sl 7>;
+            bindings = <&sl 6>;
         }; 
         combo_NUM2_tog {
             timeout-ms = <50>;
             key-positions = <34 35>;
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
         };  
+
         combo_reset_left {
             timeout-ms = <50>;
             key-positions = <2 3 4>;
@@ -246,4 +258,3 @@
     &sl {
         release-after-ms = <4000>;
     };
-        
