@@ -33,9 +33,9 @@
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-            &kp ESC     &kp UP      &kp LGUI    &kp DOWN    &trans          &kp LC(PG_UP)   &mkp MCLK   &mkp RCLK   &kp LC(PG_DN)
-&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp LA(LEFT)    &kp BSPC    &kp UP      &kp DEL      &kp LA(RIGHT)    
-&sk LALT    &sl 8       &mo 4       &sk LGUI    &kp ENTER   &trans          &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT    &kp ENTER
+            &kp ESC     &kp UP      &kp LGUI    &kp DOWN    &trans          &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
+&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK    &kp LA(RIGHT)    
+&sk LALT    &sl 8       &mo 3       &sk LGUI    &kp ENTER   &trans          &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT    &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS        &kp HOME    &kp END     &kp MINUS    &trans  
                                     &trans      &trans      &trans          &kp SPC         &mo 9       &sl 7
             >;  
@@ -55,11 +55,11 @@
         FUNC {
             display-name = "FN keys and TKL cluster";
             bindings = <
-    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_CLR  &trans                  &trans              &trans      &sk RSHFT   &sk RCTRL                                      
-&kp F11     &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &kp SCROLLLOCK      &kp BSPC    &kp INS     &kp DEL     &trans   
-&kp LCTRL   &kp LSHFT   &kp LALT    &kp F9      &kp F12     &trans                  &kp LG(LA(LC(F1)))  &kp RALT    &kp RSHFT   &kp RCTRL   &kp ENTER     
-&kp F1      &kp F3      &kp F6      &kp F7      &kp F10     &trans                  &kp CAPSLOCK        &kp PG_UP   &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
-                    &kp LA(LC(F9))  &kp LA(LC(F10)) &kp LA(LC(F11))                 &trans              &trans      &trans      
+    &bt BT_SEL 0  &bt BT_SEL 1  &kp LALT    &bt BT_CLR  &trans                  &trans              &trans          &sk RSHFT   &sk RCTRL                                      
+&kp F11     &kp F2      &kp F8      &kp F4  &kp F5      &trans                  &kp SCROLLLOCK      &kp CAPSLOCK    &kp INS     &kp BSPC    &kp DEL     
+&kp LCTRL   &kp LSHFT   &kp F9      &mo 4   &kp F12     &trans                  &kp LG(LA(LC(F1)))  &kp RALT        &kp RSHFT   &kp RCTRL   &kp ENTER     
+&kp F1      &kp F3      &kp F6      &kp F7  &kp F10     &trans                  &trans              &kp PG_UP       &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
+                    &kp LA(LC(F9))  &kp LA(LC(F10)) &kp LA(LC(F11))             &trans              &trans          &trans      
             >;
         };
 
@@ -68,7 +68,7 @@
             bindings = <
             &trans              &trans  &trans          &trans          &trans                  &msc MOVE_X(20)     &msc MOVE_Y(20)     &msc MOVE_Y(-20)    &msc MOVE_X(-20)    
 &kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &msc MOVE_Y(150)    &mmv MOVE_Y(-1000)  &mmv MOVE_Y(-500)   &mmv MOVE_Y(1000)   &msc MOVE_Y(-150) 
-&kp LALT    &kp LCTRL           &trans  &sl 3           &kp F14         &trans                  &mmv MOVE_X(-1000)  &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &mmv MOVE_X(1000)
+&kp LALT    &kp LCTRL           &trans  &trans          &kp F14         &trans                  &mmv MOVE_X(-1000)  &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &mmv MOVE_X(1000)
 &kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &kp LA(LC(F12))     &msc MOVE_X(50)     &msc MOVE_X(-50)    &kp LA(LC(F13))     &kp LA(LC(F14))  
                                         &kp LA(LC(F5))  &trans          &kp LA(LC(F6))          &mkp MCLK           &mkp LCLK           &mkp RCLK     
             >;
@@ -206,12 +206,12 @@
         }; 
         combo_RIGHT_right_half {
             timeout-ms = <50>;
-            key-positions = <39 40>;
+            key-positions = <40 41>;
             bindings = <&kp RIGHT>;
         }; 
         combo_LEFT_right_half {
             timeout-ms = <50>;
-            key-positions = <40 41>;
+            key-positions = <39 40>;
             bindings = <&kp LEFT>;
         }; 
 
@@ -231,11 +231,6 @@
             key-positions = <33 34>;
             bindings = <&sl 6>;
         }; 
-        combo_NUM2_tog {
-            timeout-ms = <50>;
-            key-positions = <34 35>;
-            bindings = <&tog 6>;
-        };  
 
         combo_reset_left {
             timeout-ms = <50>;
