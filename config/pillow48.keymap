@@ -302,39 +302,6 @@
         release-after-ms = <4000>;
     };
 
-    macros {
-        moveUR: move_up_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&mmv MOVE_X(1000) &mmv MOVE_Y(-1000)>;
-        };
-
-        moveUL: move_up_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&mmv MOVE_X(-1000) &mmv MOVE_Y(-1000)>;
-        };
-
-        moveDR: move_down_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&mmv MOVE_X(1000) &mmv MOVE_Y(1000)>;
-        };
-
-        moveDL: move_down_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&mmv MOVE_X(-1000) &mmv MOVE_Y(1000)>;
-        };
-    };
 
 
 
