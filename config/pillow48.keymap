@@ -24,9 +24,9 @@
             display-name = "Base";
             bindings = <
 &kp N1  &kp N2  &kp N3  &kp N4  &none                       &kp N8  &kp N9   &kp N0   &kp MINUS
-&kp Q   &kp W   &kp E   &kp R   &kp T   &none               &kp Y   &kp U    &kp I    &kp O                 &kp P    
-&kp A   &kp S   &kp D   &kp F   &kp G   &none               &kp H   &kp J    &kp K    &kp L                 &kp SINGLE_QUOTE
-&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp LC(LS(LA(F12)))   &mo 1
+&kp Q   &kp W   &kp E   &kp R   &kp T   &none               &kp Y   &kp U    &kp I    &kp O         &kp P    
+&kp A   &kp S   &kp D   &kp F   &kp G   &none               &kp H   &kp J    &kp K    &kp L         &kp SINGLE_QUOTE
+&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp CAPSLOCK  &mo 1
         &mo_sl 5 7      &mo 1   &ht LSHFT SPC               &mo 5   &kp SPC  &mo 4
             >;            
         };
@@ -34,11 +34,11 @@
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-            &kp ESC     &kp LEFT    &kp LGUI    &kp RIGHT   &trans          &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
-&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK    &kp LA(RIGHT)    
-&sk LALT    &sl 8       &mo 3       &sk LGUI    &kp ENTER   &trans          &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT    &kp ENTER
-&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS        &kp HOME    &kp END     &kp MINUS    &trans  
-                                    &trans      &trans      &trans          &kp SPC         &mo 9       &sl 7
+            &kp ESC     &kp LEFT    &kp LGUI    &kp RIGHT   &trans          &kp STAR    &kp BSPC    &kp DEL     &kp LC(LS(LA(F12)))
+&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp LPAR    &kp BSPC    &kp UP      &kp DEL     &kp RPAR
+&sk LALT    &sl 8       &mo 3       &sk LGUI    &kp ENTER   &trans          &mkp LCLK   &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
+&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS    &kp HOME    &kp END     &kp MINUS   &trans  
+                                    &trans      &trans      &trans          &kp SPC     &mo 9       &sl 7
             >;  
         };
 
