@@ -35,7 +35,7 @@
             display-name = "Mods and Navigation";
             bindings = <
             &kp ESC     &kp LEFT    &kp LGUI    &kp RIGHT   &trans          &kp STAR    &kp BSPC    &kp DEL     &kp LC(LS(LA(F12)))
-&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp LPAR    &kp BSPC    &kp UP      &kp DEL     &kp RPAR
+&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp N5      &kp N6      &kp UP      &kp N7      &kp N8
 &sk LALT    &sl 8       &mo 3       &sk LGUI    &kp ENTER   &trans          &mkp LCLK   &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS    &kp HOME    &kp END     &kp MINUS   &trans  
                                     &trans      &trans      &trans          &kp SPC     &mo 9       &sl 7
