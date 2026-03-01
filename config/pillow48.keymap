@@ -33,9 +33,9 @@
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-            &kp ESC     &kp UP      &kp LGUI    &kp DOWN    &trans          &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
+            &kp ESC     &kp LEFT    &kp LGUI    &kp RIGHT   &trans          &kp LC(PG_UP)   &kp BSPC    &kp DEL     &kp LC(PG_DN)
 &sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp LA(LEFT)    &mkp MCLK   &kp UP      &mkp RCLK    &kp LA(RIGHT)    
-&sk LALT    &sl 8       &mo 3       &sk LGUI    &kp ENTER   &trans          &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT    &kp ENTER
+&sk LALT    &sl 8       &sl 3       &sk LGUI    &kp ENTER   &trans          &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT    &kp ENTER
 &kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS        &kp HOME    &kp END     &kp MINUS    &trans  
                                     &trans      &trans      &trans          &kp SPC         &mo 9       &sl 7
             >;  
@@ -66,10 +66,10 @@
         MOUSE {
             display-name = "Mouse";
             bindings = <
-            &trans              &trans  &trans          &trans          &trans                  &msc MOVE_X(20)     &msc MOVE_Y(20)     &msc MOVE_Y(-20)    &msc MOVE_X(-20)    
-&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &msc MOVE_Y(150)    &mmv MOVE_Y(-1000)  &mmv MOVE_Y(-500)   &mmv MOVE_Y(1000)   &msc MOVE_Y(-150) 
-&kp LALT    &kp LCTRL           &trans  &trans          &kp F14         &trans                  &mmv MOVE_X(-1000)  &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &mmv MOVE_X(1000)
-&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &kp LA(LC(F12))     &msc MOVE_X(50)     &msc MOVE_X(-50)    &kp LA(LC(F13))     &kp LA(LC(F14))  
+            &trans              &trans  &trans          &trans          &trans                  &msc MOVE_X(-20)    &msc MOVE_Y(20)                     &msc MOVE_Y(-20)    &msc MOVE_X(-20)    
+&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &msc MOVE_Y(150)    &mmv MOVE_X(-1000) MOVE_Y(-1000)    &mmv MOVE_Y(-1000)  &mmv MOVE_X(1000) MOVE_Y(-1000)     &msc MOVE_Y(-150) 
+&kp LALT    &kp LCTRL           &trans  &trans          &kp F14         &trans                  &mmv MOVE_X(-500)   &mmv MOVE_X(-1000)                  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)                   &mmv MOVE_X(500)
+&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &msc MOVE_X(-50)    &mmv MOVE_X(-1000) MOVE_Y(1000)     &msc MOVE_X(50)     &mmv MOVE_X(1000) MOVE_Y(1000)      &trans  
                                         &kp LA(LC(F5))  &trans          &kp LA(LC(F6))          &mkp MCLK           &mkp LCLK           &mkp RCLK     
             >;
         };
@@ -215,16 +215,28 @@
             bindings = <&kp LEFT>;
         }; 
 
-        combo_RIGHT {
+        combo_UP {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&kp RIGHT>;
+            bindings = <&kp UP>;
         }; 
-        combo_LEFT {
+        combo_DOWN {
             timeout-ms = <50>;
             key-positions = <23 24>;
-            bindings = <&kp LEFT>;
+            bindings = <&kp DOWN>;
         }; 
+
+        combo_COPY {
+            timeout-ms = <50>;
+            key-positions = <34 43>;
+            bindings = <&kp LC(C)>;
+        };
+
+        combo_PASTE {
+            timeout-ms = <50>;
+            key-positions = <35 43>;
+            bindings = <&kp LC(V)>;
+        };
 
         combo_NUM2_sl {
             timeout-ms = <50>;
