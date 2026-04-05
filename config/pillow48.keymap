@@ -23,11 +23,11 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &none                       &kp N8  &kp N9   &kp N0   &kp MINUS
-&kp Q   &kp W   &kp E   &kp R   &kp T   &none               &kp Y   &kp U    &kp I    &kp O         &kp P    
-&kp A   &kp S   &kp D   &kp F   &kp G   &none               &kp H   &kp J    &kp K    &kp L         &kp SINGLE_QUOTE
-&kp TAB &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp CAPSLOCK  &mo 1
-        &mo_sl 5 7      &mo 1   &ht LSHFT SPC               &mo 5   &kp SPC  &mo 4
+&kp N1  &kp N2  &kp N3  &kp N4  &none                               &kp N8  &kp N9   &kp N0   &kp MINUS
+&kp Q   &kp W   &kp E   &kp R   &kp T   &none                       &kp Y   &kp U    &kp I    &kp O         &kp P    
+&kp A   &kp S   &kp D   &kp F   &kp G   &none                       &kp H   &kp J    &kp K    &kp L         &kp SINGLE_QUOTE
+&ht LSHFT TAB   &kp Z   &kp X   &kp C   &kp V   &none               &kp B   &kp N    &kp M    &kp CAPSLOCK  &mo 1
+        &mo_kp 5 SPC    &mo 1   &none                               &none   &kp SPC  &mo_sl 4 5
             >;            
         };
 
@@ -58,8 +58,8 @@
             bindings = <
             &trans              &trans  &trans          &trans          &trans                  &trans              &msc MOVE_Y(20)     &msc MOVE_Y(-20)    &trans        
 &kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &msc MOVE_X(-20)    &msc MOVE_Y(150)    &mmv MOVE_Y(-1000)  &msc MOVE_Y(-150)   &msc MOVE_X(20)              
-&kp LALT    &kp LCTRL           &trans  &sl 4           &kp F14         &trans                  &mmv MOVE_X(-500)   &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &mmv MOVE_X(500)
-&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &trans              &msc MOVE_X(-50)    &msc MOVE_X(50)     &trans              &trans  
+&kp LALT    &kp LCTRL           &trans  &sl 4           &kp F14         &trans                  &mkp LCLK           &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &mmv MOVE_X(500)
+&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &mmv MOVE_X(-500)   &msc MOVE_X(-50)    &msc MOVE_X(50)     &trans              &trans  
                                         &kp LA(LC(F5))  &trans          &kp LA(LC(F6))          &mkp MCLK           &mkp LCLK           &mkp RCLK     
             >;
         };
@@ -157,6 +157,14 @@
             bindings = <&mo>, <&sl>;
             display-name = "Mo-Sl";
         };
+        mo_kp: mo_kp {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <125>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Mo-Kp";
+        };
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -193,6 +201,12 @@
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&kp LALT>;
+        };
+
+        combo_layer_7 {
+            timeout-ms = <50>;
+            key-positions = <21 22 23>;
+            bindings = <&sl 7>;
         };
 
         combo_UP_right_half {
