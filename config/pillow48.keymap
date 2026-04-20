@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#define U_R (0x03E8FC18)
+
 #define BASE 0
 #define MODS 1   
 #define XFUN 2
@@ -58,7 +60,7 @@
             display-name = "Mouse";
             bindings = <
             &trans              &trans  &trans          &trans          &trans                  &msc MOVE_X(-20)    &msc MOVE_Y(20)     &msc MOVE_Y(-20)    &msc MOVE_X(20)        
-&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &trans              &trans            &mmv MOVE_Y(-1000)  &mmv 0x03E8FC18   &trans              
+&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &trans              &trans            &mmv MOVE_Y(-1000)  &mmv U_R   &trans              
 &kp LALT    &kp LCTRL           &trans  &sl 4           &kp F14         &trans                  &mkp LCLK           &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000) &mmv MOVE_X(1000)   &mmv MOVE_X(500)
 &kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &mmv MOVE_X(-500)   &trans            &msc MOVE_X(50)     &trans            &trans  
                                         &kp LA(LC(F5))  &trans          &kp LA(LC(F6))          &mkp MCLK           &mkp LCLK           &mkp RCLK     
