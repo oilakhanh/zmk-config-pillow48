@@ -14,6 +14,7 @@
 #define FLIP 7
 #define APPS 8
 #define SYMB 9
+#define MOD2 10
 //git checkout 7bd6394
 
 / {
@@ -83,7 +84,7 @@
 &ht ENTER BSPC  &kp N5      &kp N6      &kp N7      &kp N8      &trans                  &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &kp EQUAL
 &kp EQUAL       &kp N9      &kp N0      &kp COMMA   &kp DOT     &trans                  &kp N4      &kp N5      &kp N6      &kp N7      &kp ENTER
 &kp TAB         &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &trans                  &kp N1      &kp N2      &kp N3      &kp COMMA   &kp DOT
-                                        &trans      &kp SPC     &trans                  &trans      &trans      &trans 
+                                        &trans      &mo 10      &trans                  &trans      &trans      &trans 
             >;
         };
 
@@ -127,8 +128,19 @@
 &kp GRAVE       &kp PRCNT       &kp CARET           &kp AMPS        &kp STAR        &trans                      &kp EQUAL       &kp PLUS        &kp QUESTION    &kp LEFT_BRACKET    &kp RIGHT_BRACKET     
 &kp SEMICOLON   &kp LESS_THAN   &kp GREATER_THAN    &kp TILDE       &trans          &trans                      &kp SLASH       &kp COMMA       &kp DOT         &kp COLON           &kp DOUBLE_QUOTES
 &trans          &kp LC(PG_UP)   &kp LC(PG_DN)       &kp LA(LEFT)    &kp LA(RIGHT)   &trans                      &kp PIPE        &kp BACKSLASH   &kp LEFT_BRACE  &kp RIGHT_BRACE     &trans
-                                                    &trans          &trans          &trans                      &trans          &trans          &trans     
+                                                    &trans          &mo 10          &trans                      &trans          &trans          &trans     
             >;
+        };
+
+        MOD2 {
+            display-name = "Mods and Navigation 2";
+            bindings = <
+            &kp ESC     &kp LEFT    &kp LGUI    &kp RIGHT   &trans          &kp STAR    &kp BSPC    &kp DEL     &kp LC(LS(LA(F12)))
+&trans      &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp N5      &kp N6      &kp UP      &kp N7      &kp N8
+&sk LALT    &trans      &trans      &sk LGUI    &kp ENTER   &trans          &mkp LCLK   &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
+&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS    &kp HOME    &kp END     &kp MINUS   &trans  
+                                    &trans      &trans      &trans          &kp SPC     &trans      &trans
+            >;  
         };
     };
 
