@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
 
-
 #define BASE 0
 #define MODS 1   
 #define XFUN 2
@@ -15,9 +14,10 @@
 #define FLIP 7
 #define APPS 8
 #define SYMB 9
-#define MODS2 10
+//git checkout 7bd6394
 
 / {
+
     keymap {
         compatible = "zmk,keymap";
         
@@ -58,9 +58,9 @@
             display-name = "Mouse";
             bindings = <
             &trans              &trans  &trans          &trans          &trans                  &trans              &msc MOVE_Y(20)     &msc MOVE_Y(-20)    &trans        
-&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &msc MOVE_X(-20)    &msc MOVE_Y(150)    &mmv MOVE_Y(-1000)  &mmv (MOVE_X(1000)|MOVE_Y(-1000))                   &trans              
+&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &msc MOVE_X(-20)    &msc MOVE_Y(150)    &mmv MOVE_Y(-1000)  &msc MOVE_Y(-150)   &msc MOVE_X(20)              
 &kp LALT    &kp LCTRL           &trans  &sl 4           &kp F14         &trans                  &mkp LCLK           &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)   &mmv MOVE_X(500)
-&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &mmv MOVE_X(-500)   &msc MOVE_X(-50)    &msc MOVE_X(50)     &trans              &trans  
+&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &mmv MOVE_X(-500)   &msc MOVE_X(-50)    &msc MOVE_X(50)     &mmv (MOVE_X(1000)|MOVE_Y(-1000))              &trans  
                                         &kp LA(LC(F5))  &trans          &kp LA(LC(F6))          &mkp MCLK           &mkp LCLK           &mkp RCLK     
             >;
         };
@@ -68,11 +68,11 @@
         FUNC {
             display-name = "FN keys and TKL cluster";
             bindings = <
-    &bt BT_SEL 0  &bt BT_SEL 1  &kp LALT    &bt BT_CLR      &trans                  &trans              &trans      &sk RSHFT   &sk RCTRL                                      
-&kp F1      &kp F2      &kp F8      &kp F4      &kp F5      &trans                  &kp SCROLLLOCK      &kp PSCRN   &kp INS     &kp KP_NUMLOCK  &kp DEL     
-&kp F6      &kp LCTRL   &kp LSHFT   &kp F7      &kp F9      &trans                  &kp LG(LA(LC(F1)))  &kp RALT    &kp RSHFT   &kp RCTRL       &kp ENTER     
-&kp F10     &kp F11     &kp F12     &kp PG_UP   &kp PG_UP   &trans                  &trans              &trans      &trans      &trans          &kp 
-                        &kp LA(LC(F9))  &kp LA(LC(F10)) &kp LA(LC(F11))             &trans              &trans      &trans      
+    &bt BT_SEL 0  &bt BT_SEL 1  &kp LALT    &bt BT_CLR      &trans                  &trans              &trans          &sk RSHFT   &sk RCTRL                                      
+&kp F11     &kp F2      &kp F8      &kp F4  &kp F5          &trans                  &kp SCROLLLOCK      &kp CAPSLOCK    &kp INS     &kp BSPC    &kp DEL     
+&kp F9      &kp LCTRL   &kp LSHFT   &kp F12 &kp F10         &trans                  &kp LG(LA(LC(F1)))  &kp RALT        &kp RSHFT   &kp RCTRL   &kp ENTER     
+&kp F1      &kp F3      &kp F6      &kp F7  &kp CAPSLOCK    &trans                  &trans              &kp PG_UP       &kp PG_DN   &kp PSCRN   &kp KP_NUMLOCK
+                        &kp LA(LC(F9))  &kp LA(LC(F10)) &kp LA(LC(F11))             &trans              &trans          &trans      
             >;
         };
 
@@ -83,7 +83,7 @@
 &ht ENTER BSPC  &kp N5      &kp N6      &kp N7      &kp N8      &trans                  &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &kp EQUAL
 &kp EQUAL       &kp N9      &kp N0      &kp COMMA   &kp DOT     &trans                  &kp N4      &kp N5      &kp N6      &kp N7      &kp ENTER
 &kp TAB         &kp PLUS    &kp MINUS   &kp STAR    &kp SLASH   &trans                  &kp N1      &kp N2      &kp N3      &kp COMMA   &kp DOT
-                                        &trans      &mo 10      &trans                  &trans      &trans      &trans 
+                                        &trans      &kp SPC     &trans                  &trans      &trans      &trans 
             >;
         };
 
@@ -129,17 +129,6 @@
 &trans          &kp LC(PG_UP)   &kp LC(PG_DN)       &kp LA(LEFT)    &kp LA(RIGHT)   &trans                      &kp PIPE        &kp BACKSLASH   &kp LEFT_BRACE  &kp RIGHT_BRACE     &trans
                                                     &trans          &trans          &trans                      &trans          &trans          &trans     
             >;
-        };
-
-        MODS2 {
-            display-name = "Mods and Navigation 2";
-            bindings = <
-            &kp ESC     &kp LEFT    &kp LGUI    &kp RIGHT   &trans          &kp STAR    &kp BSPC    &kp DEL     &kp LC(LS(LA(F12)))
-&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp N5      &kp N6      &kp UP      &kp N7      &kp N8
-&sk LALT    &sl 8       &mo 3       &sk LGUI    &kp ENTER   &trans          &mkp LCLK   &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
-&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS    &kp HOME    &kp END     &kp MINUS   &trans  
-                                    &trans      &trans      &trans          &kp SPC     &mo 9       &sl 7
-            >;  
         };
     };
 
@@ -298,7 +287,3 @@
     &sl {
         release-after-ms = <4000>;
     };
-
-
-
-
