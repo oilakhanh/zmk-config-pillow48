@@ -208,13 +208,13 @@
         combo_LeftClick {
             timeout-ms = <50>;
             key-positions = <28 29>;
-            bindings = <&kp LCLK>;
+            bindings = <&mkp LCLK>;
             layers = <1>;
         }; 
         combo_LeftClick2 {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp LCLK>;
+            bindings = <&mkp LCLK>;
             layers = <1>;
         }; 
         combo_LCTRL {
