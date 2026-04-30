@@ -36,11 +36,11 @@
         MODS {
             display-name = "Mods and Navigation";
             bindings = <
-            &kp ESC     &kp LEFT    &kp LGUI    &kp RIGHT   &trans          &kp STAR    &kp BSPC    &kp DEL     &kp X
-&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp B       &kp M       &kp UP      &kp C       &kp V
-&sk LALT    &sl 8       &mo 3       &sk LGUI    &kp ENTER   &trans          &kp N       &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
-&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS    &kp HOME    &kp END     &kp MINUS   &trans  
-                                    &trans      &trans      &trans          &kp SPC     &mo 9       &sl 7
+            &kp ESC     &kp LEFT    &kp LGUI    &kp RIGHT   &trans          &kp STAR        &kp BSPC    &kp DEL     &kp QUESTION 
+&sl 2       &sk LCTRL   &sk LSHFT   &kp TAB     &kp BSPC    &trans          &kp LC(PG_UP)   &kp COMMA   &kp UP      &kp DOT     &kp LC(PG_DN)
+&sk LALT    &sl 8       &mo 3       &sk LGUI    &kp ENTER   &trans          &mkp LCLK       &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
+&kp LC(Y)   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &trans          &kp PLUS        &kp HOME    &kp END     &kp MINUS   &trans  
+                                    &trans      &trans      &trans          &kp SPC         &mo 9       &sl 7
             >;  
         };
 
@@ -58,10 +58,10 @@
         MOUSE {
             display-name = "Mouse";
             bindings = <
-            &trans              &trans  &trans          &trans          &trans                  &msc MOVE_X(-20)    &msc MOVE_Y(20)                     &msc MOVE_Y(-20)    &msc MOVE_X(20)        
-&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &trans              &mmv (MOVE_X(-800)|MOVE_Y(-800))  &mmv MOVE_Y(-1000)  &mmv (MOVE_X(800)|MOVE_Y(-800))       &trans              
-&kp LALT    &kp LCTRL           &trans  &trans          &kp F14         &trans                  &mkp LCLK           &mmv MOVE_X(-1000)                  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)                       &trans
-&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &trans              &mmv (MOVE_X(-800)|MOVE_Y(800))   &msc MOVE_X(50)     &mmv (MOVE_X(800)|MOVE_Y(800))        &trans  
+            &trans              &trans  &trans          &trans          &trans                  &msc MOVE_X(-20)    &msc MOVE_Y(20)                   &msc MOVE_Y(-20)    &msc MOVE_X(20)        
+&kp LGUI    &kp LC(LS(LA(F23))) &trans  &kp LA(LC(F7))  &kp F15         &trans                  &msc MOVE_Y(50)     &mmv (MOVE_X(-800)|MOVE_Y(-800))  &mmv MOVE_Y(-1000)  &mmv (MOVE_X(800)|MOVE_Y(-800))   &msc MOVE_Y(-50)              
+&kp LALT    &kp LCTRL           &trans  &trans          &kp F14         &trans                  &mkp LCLK           &mmv MOVE_X(-1000)                &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)                 &trans
+&kp LSHFT   &kp F16             &trans  &kp F13         &kp LA(LC(F8))  &trans                  &trans              &mmv (MOVE_X(-800)|MOVE_Y(800))   &msc MOVE_X(50)     &mmv (MOVE_X(800)|MOVE_Y(800))    &trans  
                                         &kp LA(LC(F5))  &trans          &kp LA(LC(F6))          &mkp MCLK           &mkp LCLK           &mkp RCLK     
             >;
         };
@@ -205,18 +205,7 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_LeftClick {
-            timeout-ms = <50>;
-            key-positions = <28 29>;
-            bindings = <&mkp LCLK>;
-            layers = <1>;
-        }; 
-        combo_LeftClick2 {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&mkp LCLK>;
-            layers = <1>;
-        }; 
+
         combo_LCTRL {
             timeout-ms = <50>;
             key-positions = <32 33>;
